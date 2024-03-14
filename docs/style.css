@@ -1,0 +1,682 @@
+:root {
+  --main-color: rgb(67, 145, 52);
+  --accent-color: rgb(52, 139, 194);
+}
+
+.header a.logo {
+    float: left;
+    height: 58px;
+    cursor: pointer;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.header h3.wordmark {
+    display: inline-block;
+    margin: 0;
+    height: 1em;
+    line-height: 1em;
+    margin-left: 0.4em;
+}
+
+.social-link {
+    text-align: right;
+    position: relative;
+    text-decoration: none;
+    padding-right: 20px;
+    top: -25px;
+    float: right;
+}
+
+
+.hamburger {
+    float: right;
+    position: relative;
+    display: block;
+    width: 1.25em;
+    height: 0.8em;
+    margin-right: 0.3em;
+    border-top: 0.2em solid black;
+    border-bottom: 0.2em solid black;
+    top: 15px;
+}
+
+.hamburger:before {
+    content: "";
+    position: absolute;
+    top: 0.3em;
+    left: 0px;
+    width: 100%;
+    border-top: 0.2em solid black;
+    text-align: left;
+}
+
+
+
+.header {
+    align-content: center;
+}
+
+#scroll-up-btn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: rgba(67, 145, 52, .788);
+    color: white;
+    cursor: pointer;
+    padding: 12px 18px;
+    border-radius: 50%; /* Rounded corners */
+    font-size: 25px; /* Increase font size */
+    content: "\f106";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 500;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    -ms-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+  }
+
+  #scroll-up-btn:hover {
+    background-color: var(--main-color); /* Add a dark-grey background on hover */
+  }
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+.header {
+    align-content: center;
+}
+
+.header .content-block {
+    padding: 20px;
+    position: fixed;
+    background: #ffffffb3;
+    align-content: center;
+}
+
+.header.content-block.cloned {
+    position: fixed;
+    background: #ffffffb3;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    align-content: center;
+}
+
+.title {
+  text-align:center;
+  margin-top:5rem;
+}
+
+.subtitle {
+  text-align:center;
+  color: black;
+  font-size: 1.2rem;
+  font-family: 'rennerbook', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 2rem;
+}
+
+
+a.btn {
+    display: inline-block;
+    padding: 10px 25px;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: 400;
+    border-radius: 8px;
+}
+
+#mission a.btn {
+  margin: 10px;
+}
+
+a.btn-outlined {
+    background-color: transparent;
+    color: black;
+    border: 1px solid;
+    border-color: black;
+}
+
+a.btn-filled {
+    background-color: var(--accent-color);
+    color: white;
+    border: 1px solid;
+    border-color: var(--accent-color);
+}
+
+a.btn:hover {
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    -ms-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+a.btn-outlined:hover {
+    background-color: transparent;
+    color: var(--main-color);
+    border: 1px solid;
+    border-color: var(--main-color);
+}
+
+a.btn-filled:hover {
+    background-color: var(--main-color);
+    color: white;
+    border: 1px solid;
+    border-color: var(--main-color);
+}
+
+.header a {
+    padding: 10px 25px;
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+}
+
+.header a:hover {
+    color: var(--main-color);
+}
+
+.header a:active {
+    color: var(--main-color);
+}
+
+.footer ul {
+    margin-bottom: 0;
+}
+
+.footer a:hover {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.footer a:hover {
+    color: #3000B1;
+}
+
+a.code-of-conduct {
+    padding-left: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+}
+
+a.code-of-conduct:hover {
+    padding-left: 5px;
+    color: #3000B1;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+}
+
+.background-footer {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: transparent;
+    border-top: 1px solid;
+    border-color: #dbdbdb;
+}
+
+.content-block {
+    margin: 0 auto;
+    max-width: 60rem;
+    color: #505050;
+    font-family: 'rennerbook', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    padding: 10px 20px;
+}
+
+.header ul{
+    list-style: none;
+    margin-top: 15px;
+    margin-bottom: 0;
+    text-align: center;
+    width: 100%;
+    font-weight: 300;
+    padding-left: 0;
+}
+
+.header li {
+    display: inline-block;
+}
+
+.main.content-block {
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
+
+p {
+    color: #505050;
+    font-family: 'rennerbook', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+}
+
+p a {
+    color: var(--main-color);
+    text-decoration: none;
+    cursor: pointer;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    -ms-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+p a:hover {
+    color: var(--accent-color);
+}
+
+footnote {
+    color: #505050;
+    font-family: 'rennerbook', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+}
+
+p.center {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.italic {
+    font-style: italic;
+}
+
+h1 {
+    color: var(--main-color);
+    font-size: 3rem;
+    font-family: 'rennerbold', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 3.5rem !important;
+    letter-spacing: 0.05rem;
+}
+
+@supports (-webkit-background-clip: text) or (background-clip: text) {
+  h1 {
+    background: linear-gradient(var(--accent-color), var(--main-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+}
+
+h2 {
+    color: black;
+    font-family: 'renner_mediummedium', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+}
+
+h3 {
+    color: black;
+    font-size: 2rem;
+    font-family: 'renner_mediummedium', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 1.2rem;
+}
+
+
+h4 {
+    color: #505050;
+    font-size: 1.4rem;
+    font-family: 'rennerbook', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.4rem;
+}
+
+h5 {
+    color: black;
+    font-size: 1.2rem;
+    font-family: 'rennerbook', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 1.2rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+a h5 {
+    font-size: 1.2rem;
+    font-family: 'rennerbook', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 1.2rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+/**Contact Form**/
+
+ /* Style inputs with type="text", select elements and textareas */
+ input[type=text], select, textarea {
+    font-family: 'rennerbook', sans-serif;
+    font-size: 14px;
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    font-family: 'rennerbook', sans-serif;
+    font-size: 16px;
+    display: inline-block;
+    padding: 10px 25px;
+    text-decoration: none;
+    font-weight: 400;
+    border-radius: 8px;
+    background-color: var(--accent-color);
+    color: white;
+    border: 1px solid;
+    border-color: var(--accent-color);
+    cursor: pointer;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    -ms-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+  }
+
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+  }
+
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 5px;
+    padding: 80px;
+  }
+
+  .project-logo {
+    width: 48px;
+    float: left;
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+
+  .folk {
+    display: inline-block;
+    margin: 5px;
+  }
+  .folk img {
+    border-radius: 4px 40px ;
+    height: 100px;
+  }
+  .small img {
+    border-radius: 50% ;
+    height: 40px;
+  }
+
+  .folk a {
+    display: block;
+    text-align: center;
+  }
+  .small a {
+    display: inline;
+  }
+
+  .folks h3 {
+    text-align: center;
+  }
+
+  .blog-title {
+    font-size: 150%;
+    font-weight: bold;
+  }
+
+  .blog-header {
+    justify-content: space-between;
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+  }
+  .row {
+    display: flex;
+    flex-direction: row;
+  }
+
+
+@media screen and (min-width: 921px) {
+    .row {
+     display:flex;
+    }
+
+  .column {
+    flex: 50%;
+  }
+
+  .column-left {
+    padding-right: 1%;
+  }
+  .column-right {
+    padding-left: 1%;
+  }
+}
+
+@media screen and (max-width: 821px) {
+
+    h1 {
+        font-size: 2.4rem;
+        line-height: 2.4rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+        line-height: 1.4rem;
+    }
+
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    }
+
+    .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 821px) {
+    .header a {
+        float: right;
+        padding: 5px 15px;
+        font-size: 14px;
+    }
+
+    .header a:hover {
+        float: right;
+        padding: 5px 15px;
+        font-size: 14px;
+    }
+
+    .header ul {
+        margin-top: 10px;
+        text-align: right;
+        width: 90%;
+    }
+
+    .social-link {
+        text-align: right;
+        position: relative;
+        padding-right: 10px;
+        top: -38px;
+        float: right;
+    }
+}
+
+@media screen and (min-width: 660px) {
+
+    .menu-btn, label.menu-icon, .menu-drop-down{
+        display: none;
+    }
+
+    .header .menu-dropdown {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .header ul {
+        display: none;
+    }
+
+    .social-link {
+        text-align: right;
+        position: relative;
+        padding-right: 20px;
+        top: 20px;
+        float: right;
+    }
+
+
+    .bottom-border {
+        border-bottom: 1px solid #cececec7;
+        border-right: none;
+    }
+}
+
+
+  /* Fonts */
+
+
+@font-face {
+    font-family: 'rennerbook';
+    src: url('fonts/renner/renner-book-webfont.woff2') format('woff2'),
+         url('fonts/renner/renner-book-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'renner_blackblack';
+    src: url('fonts/renner/renner-black-webfont.woff2') format('woff2'),
+         url('fonts/renner/renner-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+  @font-face {
+    font-family: 'renner_blackblack_italic';
+    src: url('fonts/renner/renner-blackitalic-webfont.woff2') format('woff2'),
+         url('fonts/renner/renner-blackitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+  @font-face {
+    font-family: 'rennerbold';
+    src: url('fonts/renner/renner-bold-webfont.woff2') format('woff2'),
+         url('fonts/renner/renner-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+  @font-face {
+    font-family: 'rennerbold_italic';
+    src: url('fonts/renner/renner-bolditalic-webfont.woff2') format('woff2'),
+         url('fonts/renner/renner-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+  @font-face {
+    font-family: 'rennerbook_italic';
+    src: url('fonts/renner/renner-bookitalic-webfont.woff2') format('woff2'),
+         url('fonts/renner/renner-bookitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+  @font-face {
+    font-family: 'renner_lightlight';
+    src: url('fonts/renner/renner-light-webfont.woff2') format('woff2'),
+         url('fonts/renner/renner-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal
+  }
+
+
+  @font-face {
+    font-family: 'renner_lightlight_italic';
+    src: url('fonts/renner/renner-lightitalic-webfont.woff2') format('woff2'),
+         url('fonts/renner/renner-lightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+  @font-face {
+    font-family: 'renner_mediummedium';
+    src: url('fonts/renner/renner-medium-webfont.woff2') format('woff2'),
+         url('fonts/renner/renner-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+  @font-face {
+    font-family: 'renner_mediummedium_italic';
+    src: url('fonts/renner/renner-mediumitalic-webfont.woff2') format('woff2'),
+         url('fonts/renner/renner-mediumitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
