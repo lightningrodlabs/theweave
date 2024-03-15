@@ -11,7 +11,7 @@ description: ""
     <div class="header-content-inner">
       <h1 class="home-heading">The Weave</h1>
       <hr style="margin-bottom: 1em;"/>
-      <p class="header-text">Open protocols and standards for embodying healthy social fabric.</p>
+      <p class="header-text">Open protocols and standards for embodying thrivable social fabric.</p>
       <p><a href="#about" class="btn btn-primary btn-xl page-scroll">Explore</a></p>
     </div>
   </div>
