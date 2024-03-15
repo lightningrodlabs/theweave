@@ -25,7 +25,7 @@ description: ""
     <div class="row text-left">
       <div class="col-lg-6 col-md-6">
         <p>The social fabric of complex and healthy societies is composed of many interlocking social agreements involving many community subsets.</p>
-        <p> We provide a grammar and implementation of a set of open protocols and standards for spinnging up all kinds of small social agreement units and weaving them together in a meaningfull and easy to use way.</p>
+        <p> We provide a grammar and implementation of a set of open protocols and standards for spinning up all kinds of small social agreement units and weaving them together in a meaningful and easy to use way.</p>
         <p style="font-weight:bold; font-size:180%;">The Weave:</p><ul>
           <li class="text-faded">allows groups to embody their social context without any centralized infrastructure</li>
           <li>enables collaboration with fit-for-purpose groupware capacities</li>
