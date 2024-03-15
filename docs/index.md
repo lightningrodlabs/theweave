@@ -31,7 +31,7 @@ description: ""
           <li>enables collaboration with fit-for-purpose group-ware <i>Capacities</i></li>
           <li class="text-faded">makes "own-your-data" real by design</li>
           <li>allows you to search all of your data across the groups you are part of</li>
-          <li class="text-faded">grows with network-effects as <i>Capacities</i> are added to libraries </li>
+          <li class="text-faded">grows with network-effects as <i>Capacities</i> are added to the ecosystem </li>
           <li>centers groups and their members, not large corporate silos</li>
         </ul>
       </div>
@@ -40,7 +40,7 @@ description: ""
       </div>
       <div class="col-lg-6 col-md-6">
         <p >What we now call "The Web" was the result of three critical new open standards: HTML, HTTP and the URL.  These allowed anybody to publish documents and link to them from other documents.  The advent and Javascript and CSS made it so Web Browsers could these documents could be both beautiful and as functional as any computer program.  </p>
-        <p> But these none of those open standards embodies creation and management of social context.  So that critical function has become siloed into the big corporate websites.  Facebook holds your groups, GitHub holds your code, GSuite holds your collaboration tools.</p>
+        <p> But none of those open standards enabled creation and management of social context by groups.  So, that critical function has become siloed into the big corporate websites:  Facebook holds group's "Page", GitHub holds your code, GSuite holds your collaboration tools.</p>
         <p ><a class="linkable" href="https://holochain.org"><i>Holochain</i></a> is the first new open standard that enables creating small functioning units of social context.  To that we now add the <i>Weave Interaction Protocol</i>, an open standard for creating, searching, linking and organizing these units into complex social fabric that yields "The Weave".</p>
       </div>
       <p class="aligncenter"><br /><a href="#deeper" class="btn btn-default btn-xl page-scroll sr-button">Go Deeper</a>
