@@ -37,11 +37,10 @@ header .header-content .header-content-inner p.header-text {
   /* text-shadow: 2px 2px #CCC; */
   font-size: 250%;
   line-height: 1.5;
-  color: #555;
   font-weight: bold;
-  background: rgba(220, 220, 220, .3);
-  color: #222;
-  padding: .5em 0;
+  background: rgba(220, 220, 220, 0.4);
+  color: lightgoldenrodyellow;
+  padding: .5em 5px;
   border-radius: 22px;
 }
 
