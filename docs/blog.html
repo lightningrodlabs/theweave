@@ -1,0 +1,121 @@
+---
+layout: search
+title: The Weave Blog
+nav_title: Blog
+navigation_weight: 2
+permalink: /blog/
+description: The Weave News, Resources, and Reflections
+---
+<section class="blog">
+  <div class="container">
+    <div class="row">
+      <div  class="col-md-8">
+        <div  id="tag-results-container" class="hidden">
+	  <div class="row no-gutters" style="margin-top:0px;">
+	    <div class="col-md-12">
+	      <h2>Posts tagged as: <span id="searched-tag"></span></h2>
+	    </div>
+	  </div>
+          <div class="row">
+	    <div class="col-md-11">
+	      <ul id="tag-results" style="list-style-type: none;padding:0 0 0 5px;"></ul>
+	    </div>
+	  </div>
+        </div>
+
+	<ul id="blog-posts" style="list-style-type: none;padding: 0px;" class="blog-posts">
+	  {% for post in site.posts %}
+	  <li>
+            <post-meta class="tags">
+              {% for tag in post.tags %}
+              <a href="{{ site.baseurl }}/blog?tag={{tag|url_escape}}" class="tag">{{tag}}</a>
+              {% endfor %}
+            </post-meta>
+            <div class="pull-left">
+              <post-meta class="read-time">Read Time:
+                {% assign words = post.content | number_of_words %}
+                {% if words < 360 %}
+                              1 min
+                              {% else %}
+                              {{ words | divided_by: 180 }} mins
+                              {% endif %}
+                              </post-meta>
+            </div>
+            <div class="pull-right">
+              <post-meta class="author">
+                {% if post.author %} <a href="{{post.author_url}}">{{ post.author }}</a>  • {% endif %}{% if post.meta %} • {{ post.meta }}{% endif %}</post-meta>
+              <post-meta class="post-date">
+                {{ post.date | date: "%d %B %Y" }}
+              </post-meta>
+            </div>
+	    <h2 class="text-left section-heading">
+	      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+	    </h2>
+	    <div class="post-excerpt">
+              <p>
+                {{ post.excerpt }}
+              </p>
+              <p class="text-right read-more">
+                <a href="{{ site.baseurl }}{{ post.url }}" class="btn btn-primary btn-xl">Read More</a></p>
+            </div>
+	  </li>
+	  {% endfor %}
+	</ul>
+      </div>
+      <div class="col-md-4">
+	<div class="row">
+	  <div class="col-md-11 col-md-offset-1" style="border: 1px dashed #ccc;">
+	    <div class="row no-gutters" style="margin-top:0px;">
+	      <div class="col-md-12">
+		<h3>Search blog posts</h3>
+	      </div>
+	    </div>
+	    <form action="{{ site.baseurl }}/blog/" method="get" class="search-form">
+	      <div class="form-group">
+		<div class="row no-gutters">
+		  <div class="col-lg-8 col-md-7">
+		    <input type="text" id="search-box" name="query" placeholder="Search blogs" class="form-control input-lg">
+		  </div>
+		  <div class="col-lg-4 col-md-5">
+		    <div class="pull-right">
+		      <input type="submit" value="search" class="btn btn-primary btn-lg">
+		    </div>
+		  </div>
+		</div>
+	      </div>
+	    </form>
+	    <div class="row">
+	      <div class="col-md-11">
+		<ul id="search-results" style="list-style-type: none;padding:0 0 0 5px;"></ul>
+	      </div>
+	    </div>
+	    <script>
+	      window.store = {
+	      {% for post in site.posts %}
+	      "{{ post.url | slugify }}": {
+	      "title": "{{ post.title | xml_escape }}",
+	      "author": "{{ post.author | xml_escape }}",
+	      "tags": {{ post.tags | jsonify }},
+	      "content": {{ post.content | strip_html | strip_newlines | jsonify }},
+	      "url": "{{ post.url | xml_escape }}"
+	      }
+	      {% unless forloop.last %},{% endunless %}
+	      {% endfor %}
+	      };
+	    </script>
+	  </div>
+          <div class="col-md-11 col-md-offset-1">
+            <h3>Tags:</h3>
+            <post-meta class="tags">
+              {% for tag in site.tags %}
+              {% assign t = tag | first %}
+              <a href="{{ site.baseurl }}/blog?tag={{t|url_escape}}" class="tag">{{t}}</a>
+              {% endfor %}
+            </post-meta>
+          </div>
+	</div>
+      </div>
+    </div>
+
+  </div>
+</section>
