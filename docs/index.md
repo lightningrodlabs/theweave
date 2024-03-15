@@ -39,7 +39,7 @@ description: ""
       <div class="col-lg-6 col-md-6">
         <p >What we now call "The Web" was the result of three critical new open standards: HTML, HTTP and the URL.  These allowed anybody to publish documents and link to them from other document.  The advent and Javascript and CSS made it so Web Browsers could these documents could be both beautiful and as functional as any computer program.  </p>
         <p> But these none of those open standards embodies creation and management of social context.  So that critical function has become siloed into the big corporate websites.  Facebook holds your groups, GitHub holds your code, GSuite holds your collaboration tools.</p>
-        <p ><a class="linkable" href="https://holochain.org">Holochain</a> is the new open standard that enables creating small functioning units of social context.  The <i>Weave Interaction Protocol</i> allows us to organize these units into social fabric and yield "The Weave".</p>
+        <p ><a class="linkable" href="https://holochain.org"><i>Holochain</i></a> is the first new open standard that enables creating small functioning units of social context.  To that we now add the <i>Weave Interaction Protocol</i>, an open standard for organizing these units into social fabric and yield "The Weave".</p>
       </div>
       <p class="aligncenter"><br /><a href="#deeper" class="btn btn-default btn-xl page-scroll sr-button">Go Deeper</a>
       &nbsp;<a href="#tryit" class="btn btn-default btn-xl page-scroll sr-button">Try It</a></p>
@@ -70,10 +70,10 @@ description: ""
     </div>
     <div class="row text-left">
       <div class="col-lg-4 col-md-4">
-        <p><strong>Browsers</strong>, like Firefox and Chrome are programs that allow you to, well, browse the documents served up by web servers.
+        <p><strong>Browsers</strong>, like Firefox and Chrome are the programs that allow you to, well, browse the documents served up by web servers.
         </p>
         <p><strong>Frames</strong> are the programs that let you create, access and weave together Holochain hApps into the social fabric of The Weave</p>
-        <p>You can download and try Moss, our reference implementation of a Frame for The Weave</p>
+        <p><img style="width:100px;float:left;margin-right:10px;" src="/images/moss_icon.png"/> Download and try Moss, our reference implementation of a Frame for The Weave</p>
       </div>
       <div class="col-lg-8 col-md-8">
         <div class="screenshot-image"></div>
