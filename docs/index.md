@@ -70,7 +70,7 @@ description: ""
     </div>
     <div class="row text-left">
       <div class="col-lg-4 col-md-4">
-        <p><strong>Browsers</strong>, like Firefox and Chrom are programs that allow you to, well, browse the documents served up by web servers.
+        <p><strong>Browsers</strong>, like Firefox and Chrome are programs that allow you to, well, browse the documents served up by web servers.
         </p>
         <p><strong>Frames</strong> are the programs that let you create, access and weave together Holochain hApps into the social fabric of The Weave</p>
         <p>You can download and try Moss, our reference implementation of a Frame for The Weave</p>
