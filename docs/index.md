@@ -55,7 +55,7 @@ description: ""
       <hr class="light">
     </div>
     <div class="row text-left">
-      <div class="col-lg-10 col-md-10">
+      <div class="col-lg-12 col-md-12">
       {% capture my_include %}{% include_relative paper.md %}{% endcapture %}
       {{ my_include | markdownify }}
       </div>

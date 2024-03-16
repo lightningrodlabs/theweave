@@ -16,7 +16,7 @@ The specific nature of this substrate is important (see "Considerations" below),
 
 These criteria make possible some of most important functional aspects of the Weave as will be described below.
 
-One such substrate that matches these criteria is Holochain, which is built out of:
+One such substrate that matches these criteria is **Holochain**, which is built out of:
 1. a distributed, validating data store (integrity zomes + graphing DHT)
 2. with mutation described by clear API (coordinator zomes)
 3. where each set of validation rules comprises a separate network of participating agents, co-holding and validating the actions of other agents.

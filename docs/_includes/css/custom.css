@@ -250,6 +250,11 @@ div#disqus_thread {
 }
 
 
+section#deeper p strong {
+  background-color: rgba(220, 220, 220, 0.4);
+  border-radius: 3px;
+}
+
 /* Image */
 
 .image {
