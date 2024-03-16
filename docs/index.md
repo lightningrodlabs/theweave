@@ -19,7 +19,7 @@ description: ""
 <section class="bg-primary" id="about">
   <div class="container">
     <div class="row text-center">
-      <h2 class="section-heading">Growing Healthy Social Fabric</h2>
+      <h2 class="section-heading">Growing Thrivable Social Fabric</h2>
       <hr class="light">
     </div>
     <div class="row text-left">
