@@ -114,8 +114,25 @@ description: ""
             <span> <strong>WaterTable: </strong> provides ability to create database-like tables for collecting and viewing data.  Think of this as an "AirTable" clone!</span> </div>
         </div>
       </div>
-      <p class="aligncenter"><br /><a href="https://github.com/lightningrodlabs/we/releases/tag/we-alpha-v0.10.7" class="btn btn-default btn-xl sr-button">Download Moss</a></p>
+      <p class="aligncenter"><br /><a href="https://github.com/lightningrodlabs/we/releases/tag/we-alpha-v0.10.7" class="btn btn-default btn-xl sr-button">Download Moss</a><a style="margin-left:10px;" href="#developers" class="btn btn-default btn-xl sr-button">Build Capacities</a></p>
+    </div>
+  </div>
+</section>
 
+<section class="bg-dark" id="developers">
+  <div class="container">
+    <div class="row text-center">
+      <h2 class="section-heading">Developing Capacities for The Weave</h2>
+      <hr class="light">
+    </div>
+    <div class="row text-left">
+      <div class="col-lg-12 col-md-12">
+        <p>Coding a Weave Capacity is a matter of updating a standard Holochain hApp in a few ways.</p>
+        <p>It's trivial (a 5 minute task) to simply update your hApp to run in the context of a Weave Frame,
+           this just involves getting the <code>AppAgentClient</code> from the Frame instead of building it directly
+           using the <code>holochain-client</code> library. </p>
+        <p>It takes a little more work to add support for other aspects of the Weave Integration Protocol, but each of these, searching, linking, embeding, creating, can be added one piece at a time and are not a heavy lift. Detailed instructions for how to develop capacities can be found in the <a class="linkable" href="https://github.com/lightningrodlabs/we">Moss repo's Readme</a></p>
+      </div>
     </div>
   </div>
 </section>
