@@ -109,6 +109,10 @@ a.linkable {
   margin-right:10px;
   width: 50px;
 }
+.capacity-logo:hover {
+  transform: scale(1.25);
+}
+
 .capacities div {
   display: flex;
   margin-top: 10px;
