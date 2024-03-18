@@ -43,12 +43,12 @@ description: ""
         <p> But none of those open standards enabled creation and management of social context by groups.  So, that critical function has become siloed into the big corporate websites:  Facebook holds group's "Page", GitHub holds your code, GSuite holds your collaboration tools.</p>
         <p ><a class="linkable" href="https://holochain.org"><i>Holochain</i></a> is the first new open standard that enables creating small functioning units of social context.  To that we now add the <i>Weave Interaction Protocol</i>, an open standard for creating, searching, linking and organizing these units into complex social fabric that yields "The Weave".</p>
       </div>
-      <p class="aligncenter"><br /><a href="#deeper" class="btn btn-default btn-xl page-scroll sr-button">Go Deeper</a>
+      <p class="aligncenter"><br /><a href="#technical" class="btn btn-default btn-xl page-scroll sr-button">Go Deeper</a>
       &nbsp;<a href="#tryit" class="btn btn-default btn-xl page-scroll sr-button">Try It</a></p>
     </div>
   </div>
 </section>
-<section class="bg-dark" id="deeper">
+<section class="bg-dark" id="technical">
   <div class="container">
     <div class="row text-center">
       <h2 class="section-heading">Technical Overview: Draft--March 2024</h2>
@@ -131,7 +131,7 @@ description: ""
         <p>It's trivial (a 5 minute task) to simply update your hApp to run in the context of a Weave Frame,
            this just involves getting the <code>AppAgentClient</code> from the Frame instead of building it directly
            using the <code>holochain-client</code> library. </p>
-        <p>It takes a little more work to add support for other aspects of the Weave Integration Protocol, but each of these, searching, linking, embeding, creating, can be added one piece at a time and are not a heavy lift. Detailed instructions for how to develop capacities can be found in the <a class="linkable" href="https://github.com/lightningrodlabs/we">Moss repo's Readme</a></p>
+        <p>It takes a little more work to add support for other aspects of the Weave Integration Protocol, but each of these affordances (searching, linking, embeding, creating) can be added one piece at a time and are not a heavy lift. Detailed instructions for how to add  can be found in the <a class="linkable" href="https://www.npmjs.com/package/@lightningrodlabs/we-applet">client npm package docs</a></p>
       </div>
     </div>
   </div>
