@@ -71,21 +71,20 @@ description: ""
       <hr class="light">
     </div>
     <div class="row text-left">
-      <div class="col-lg-4 col-md-4">
-        <p><img style="width:100px;float:left;margin-right:10px;" src="/images/moss_icon.png"/> Download and try Moss, our reference implementation of a Frame for The Weave</p>
-      </div>
       <div class="col-lg-8 col-md-8">
         <p><strong>Browsers</strong>, like Firefox and Chrome are the programs that allow you to, well, browse the documents served up by web servers.
         </p>
         <p><strong>Frames</strong> are the programs that let you create, access and weave together Holochain hApps into the social fabric of The Weave</p>
+      </div>
+      <div class="col-lg-4 col-md-4">
+        <p><img style="width:100px;float:left;margin-right:10px;" src="/images/moss_icon.png"/> Download and try Moss, our reference implementation of a Frame for The Weave</p>
       </div>
       <div class="col-lg-12 col-md-12">
         <p class="screenshot-image aligncenter"></p>
       </div>
       <h3 class="aligncenter">Capacities</h3>
       <div class="col-lg-6 col-md-6">
-        <p> A core feature of the weave is the the ability for groups to pick the fit-for-purpose tooling that's appropriate for each group, and, if desired
-        add specific new tools as purpose and needs evolve.</p>
+        <p> A core feature of The Weave is the the ability for groups to pick the fit-for-purpose tooling that's appropriate for each group, and, as desired add specific new tools as the group's purpose and needs evolve.</p>
         <p>Assets generated in one Capacity can be linked to and embedded in other Capacities creating an functionality centric computing environment rather than the usual application centric model.</p>
         <p>Here are a number of Capacities that have allready been developed that you can use to get a feeling for the power of this approach:</p>
         <div class="capacities">
