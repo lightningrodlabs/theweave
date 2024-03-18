@@ -1,6 +1,4 @@
 
-# The Weave: 3/2024 Draft Technical Overview
-
 The social fabric of complex and healthy societies is composed of many interlocking social contracts involving many community subsets.  We propose a grammar and implementation of **The Weave**, of a set of open protocols and standards for spinning up all kinds of small social agreement units and knitting them together in a meaningful and easy to use way.
 
 ## Social Substrate

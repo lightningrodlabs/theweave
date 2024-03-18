@@ -51,7 +51,7 @@ description: ""
 <section class="bg-dark" id="deeper">
   <div class="container">
     <div class="row text-center">
-      <h2 class="section-heading">The Technical Details</h2>
+      <h2 class="section-heading">Technical Overview: Draft--March 2024</h2>
       <hr class="light">
     </div>
     <div class="row text-left">
@@ -72,14 +72,41 @@ description: ""
     </div>
     <div class="row text-left">
       <div class="col-lg-4 col-md-4">
-        <p><strong>Browsers</strong>, like Firefox and Chrome are the programs that allow you to, well, browse the documents served up by web servers.
-        </p>
-        <p><strong>Frames</strong> are the programs that let you create, access and weave together Holochain hApps into the social fabric of The Weave</p>
         <p><img style="width:100px;float:left;margin-right:10px;" src="/images/moss_icon.png"/> Download and try Moss, our reference implementation of a Frame for The Weave</p>
       </div>
       <div class="col-lg-8 col-md-8">
-        <div class="screenshot-image"></div>
+        <p><strong>Browsers</strong>, like Firefox and Chrome are the programs that allow you to, well, browse the documents served up by web servers.
+        </p>
+        <p><strong>Frames</strong> are the programs that let you create, access and weave together Holochain hApps into the social fabric of The Weave</p>
       </div>
+      <div class="col-lg-12 col-md-12">
+        <p class="screenshot-image aligncenter"></p>
+      </div>
+      <h3 class="aligncenter">Capacities</h3>
+      <div class="col-lg-6 col-md-6">
+        <p> A core feature of the weave is the the ability for groups to pick the fit-for-purpose tooling that's appropriate for each group, and, if desired
+        add specific new tools as purpose and needs evolve.</p>
+        <p>Assets generated in one Capacity can be linked to and embedded in other Capacities creating an functionality centric computing environment rather than the usual application centric model.</p>
+        <p>Here are a number of Capacities that have allready been developed that you can use to get a feeling for the power of this approach.</p>
+        <ul class="capacities">
+          <li> <img class="capacity-logo" src="https://lightningrodlabs.org/projects/vines.svg"> <strong>Vines: </strong> Provides the usual chat functionality: topics, channels, attachments, mentions, etc.</li>
+          <li> <img class="capacity-logo" src="https://lightningrodlabs.org/projects/slate_icon.svg"> <strong>Slate: </strong> Provides real-time collaborative drawing. Fully featured diagrams and drawing tools based on the <a class="linkable" href="https://excalidraw.com/">Excalidraw</a> open-source library.</li>
+          <li> <img class="capacity-logo" src="https://lightningrodlabs.org/projects/notebooks_logo.svg"> <strong>Notebooks: </strong> Provides real-time collaborative editing of MarkDown documents. Includes syntax-highlighting, version history, and more.</li>
+          <li> <img class="capacity-logo" src="/images/kando_icon.png"> <strong>KanDo: </strong> provides robust KanBan functionality with commenting, assignments, labels, categories, checklists and more. </li>
+        </ul>
+      </div>
+      <div class="col-lg-6 col-md-6">
+        
+        <ul class="capacities">
+          <li> <img class="capacity-logo" src="/images/talking-stickies_icon.png"> <strong>TalkingStickies: </strong> provides real-time stickies-boards for ideation, meeting agendas, retros, etc... </li>
+          <li> <img class="capacity-logo" src="https://lightningrodlabs.org/projects/converge.png"> <strong>Converge: </strong> allows stakeholders to shift focus from outcomes to refining a set of criteria that has maximal support. Using this list, they can evaluate and refine proposals to meet those broadly supported criteria.</li>
+          <li> <img class="capacity-logo" src="https://lightningrodlabs.org/projects/whosin.png"> <strong>Who's In?: </strong> enables users to propose collective actions or events. With it, anyone can suggest a joint action or event, which other people can agree to on the contingency that every necessary role is filled. This allows group action to grow effortlessly from idea to reality without anyone having to worry about its viability.</li>
+          <li> <img class="capacity-logo" src="https://lightningrodlabs.org/projects/snapmail_logo.jpg"> <strong>SnapMail: </strong> provides email-like in-group messaging with attachments, replies, etc.</li>
+          <li> <img class="capacity-logo" src="https://lightningrodlabs.org/projects/where_logo.png"> <strong>Where: </strong> provides a generalized grammar for creating shared maps for groups to see the emergent "whereness" of each other across those them, as well as the grammatics to self-evolved these spaces and how to represent "location" in them.</li>
+          <li> <img class="capacity-logo" src="/images/gamez_icon.svg"> <strong>Gamez: </strong> provides a place to design and play arbitrary board games.</li>
+        </ul>
+      </div>
+
 
       <p class="aligncenter"><br /><a href="https://github.com/lightningrodlabs/we/releases/tag/we-alpha-v0.10.7" class="btn btn-default btn-xl sr-button">Download</a></p>
 
