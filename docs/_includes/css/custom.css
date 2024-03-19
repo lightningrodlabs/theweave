@@ -263,7 +263,7 @@ div#disqus_thread {
 }
 
 
-section#deeper p strong, section#deeper ol li strong, section#deeper ul li strong {
+section#technical p strong, section#technical ol li strong, section#technical ul li strong {
   background-color: rgba(220, 220, 220, 0.4);
   border-radius: 3px;
 }

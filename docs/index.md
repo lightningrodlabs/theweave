@@ -59,7 +59,7 @@ description: ""
       {% capture my_include %}{% include_relative paper.md %}{% endcapture %}
       {{ my_include | markdownify }}
       </div>
-      <p class="aligncenter"><br /><a href="#tryit" class="btn btn-default btn-xl page-scroll sr-button">Try It</a></p>
+      <p class="aligncenter"><br /><a href="#tryit" class="btn btn-default btn-xl page-scroll sr-button">Try It</a><a style="margin-left:10px;" href="#developers" class="btn btn-default btn-xl sr-button page-scroll">Develop The Weave</a></p>
     </div>
   </div>
 </section>
@@ -117,7 +117,7 @@ description: ""
             </a><span> <strong>Xylem: </strong> provides real-time colloaborative spread-sheets based on the <a class="linkable" href="https://github.com/dream-num/univer">Univer</a> open-source library.</span> </div>
         </div>
       </div>
-      <p class="aligncenter"><br /><a href="https://github.com/lightningrodlabs/we/releases/tag/we-alpha-v0.10.7" class="btn btn-default btn-xl sr-button">Download Moss</a><a style="margin-left:10px;" href="#developers" class="btn btn-default btn-xl sr-button">Build Tools</a></p>
+      <p class="aligncenter"><br /><a href="https://github.com/lightningrodlabs/we/releases/tag/we-alpha-v0.10.7" class="btn btn-default btn-xl sr-button">Download Moss</a><a style="margin-left:10px;" href="#developers" class="btn btn-default btn-xl sr-button page-scroll">Develop The Weave</a></p>
     </div>
   </div>
 </section>
@@ -125,11 +125,20 @@ description: ""
 <section class="bg-dark" id="developers">
   <div class="container">
     <div class="row text-center">
-      <h2 class="section-heading">Developing Tools for The Weave</h2>
+      <h2 class="section-heading">Developing The Weave</h2>
       <hr class="light">
     </div>
     <div class="row text-left">
-      <div class="col-lg-12 col-md-12">
+      <div class="col-lg-6 col-md-6">
+        <h3 class="aligncenter">Our Methodology</h3>
+        <p>Many deep infrastructure projects are built by creating a very detailed specification, and then building to it.  With The Weave, this is not our way.</p>
+        <p>Instead we have built Moss, as a reference frame and discovery tool to understand what needs to exist inside The Weave, as we begin using it organically ourselves to grow our own social fabric.  The concepts described in this website emerged over time, beginning from what was at first just understood as a <a href="https://eric.harris-braun.com/blog/2022/07/26/id-390">distributed groupware</a> platform, and are now solidifying into a more formal protocol with the <strong>Weave Interaction Pattern</strong> described above.</p>
+        <p>We expect this to become more formalized over time, but for now we want it to emerge from the 
+        experience and needs of actual groups using this framework.  Thus we are not prematurely creating a "hard-spec" of for the WIP</p>
+        <p>We expect very soon to open a Group that uses a Tool in development called <a href="https://github.com/holochain/how">How</a> to "dog-food" the landing of the WIP spec.</p>
+      </div>
+      <div class="col-lg-6 col-md-6">
+        <h3 class="aligncenter">Building Tools</h3>
         <p>Coding a Weave Tool is a matter of updating a standard Holochain hApp in a few ways.</p>
         <p>It's trivial (a 5 minute task) to simply update your hApp to run in the context of a Weave Frame,
            this just involves getting the <code>AppAgentClient</code> from the Frame instead of building it directly
