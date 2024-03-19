@@ -28,10 +28,10 @@ description: ""
         <p> We provide a grammar and implementation of a set of open protocols and standards for spinning up all kinds of small social agreement units and weaving them together in a meaningful and easy to use way.</p>
         <p style="font-weight:bold; font-size:180%;">The Weave:</p><ul>
           <li class="text-faded">allows groups to embody their social context without any centralized infrastructure</li>
-          <li>enables collaboration with fit-for-purpose group-ware <i>Capacities</i></li>
+          <li>enables collaboration with fit-for-purpose group-ware <i>Tools</i></li>
           <li class="text-faded">makes "own-your-data" real by design</li>
           <li>allows you to search all of your data across the groups you are part of</li>
-          <li class="text-faded">grows with network-effects as <i>Capacities</i> are added to the ecosystem </li>
+          <li class="text-faded">grows with network-effects as <i>Tools</i> are added to the ecosystem </li>
           <li>centers groups and their members, not large corporate silos</li>
         </ul>
       </div>
@@ -82,11 +82,12 @@ description: ""
       <div class="col-lg-12 col-md-12">
         <p class="screenshot-image aligncenter"></p>
       </div>
-      <h3 class="aligncenter">Capacities</h3>
+      <h3 class="aligncenter">Tools</h3>
       <div class="col-lg-6 col-md-6">
         <p> A core feature of The Weave is the the ability for groups to pick the fit-for-purpose tooling that's appropriate for each group, and, as desired add specific new tools as the group's purpose and needs evolve.</p>
-        <p>Assets generated in one Capacity can be linked to and embedded in other Capacities creating an functionality centric computing environment rather than the usual application centric model.</p>
-        <p>Here are a number of Capacities that have allready been developed that you can use to get a feeling for the power of this approach:</p>
+        <p>Assets generated in one Tool can be linked to and embedded in Assets created by other tools.  This createas an
+        "asset-centric" computing environment rather than the usual application centric model.</p>
+        <p>Here are a number of Tool capacities that have allready been developed that you can use to get a feeling for the power of this approach:</p>
         <div class="capacities">
           <div> <a href="https://github.com/lightningrodlabs/vines"><img class="capacity-logo" src="https://lightningrodlabs.org/projects/vines.svg"> </a><span><strong>Vines: </strong> Provides the usual chat functionality: topics, channels, attachments, mentions, etc.</span></div>
           <div> <a href="https://github.com/lightningrodlabs/slate"><img class="capacity-logo" src="https://lightningrodlabs.org/projects/slate_icon.svg"> </a><span> <strong>Slate: </strong> Provides real-time collaborative drawing. Fully featured diagrams and drawing tools based on the <a class="linkable" href="https://excalidraw.com/">Excalidraw</a> open-source library.</span> </div>
@@ -116,7 +117,7 @@ description: ""
             </a><span> <strong>Xylem: </strong> provides real-time colloaborative spread-sheets based on the <a class="linkable" href="https://github.com/dream-num/univer">Univer</a> open-source library.</span> </div>
         </div>
       </div>
-      <p class="aligncenter"><br /><a href="https://github.com/lightningrodlabs/we/releases/tag/we-alpha-v0.10.7" class="btn btn-default btn-xl sr-button">Download Moss</a><a style="margin-left:10px;" href="#developers" class="btn btn-default btn-xl sr-button">Build Capacities</a></p>
+      <p class="aligncenter"><br /><a href="https://github.com/lightningrodlabs/we/releases/tag/we-alpha-v0.10.7" class="btn btn-default btn-xl sr-button">Download Moss</a><a style="margin-left:10px;" href="#developers" class="btn btn-default btn-xl sr-button">Build Tools</a></p>
     </div>
   </div>
 </section>
@@ -124,17 +125,17 @@ description: ""
 <section class="bg-dark" id="developers">
   <div class="container">
     <div class="row text-center">
-      <h2 class="section-heading">Developing Capacities for The Weave</h2>
+      <h2 class="section-heading">Developing Tools for The Weave</h2>
       <hr class="light">
     </div>
     <div class="row text-left">
       <div class="col-lg-12 col-md-12">
-        <p>Coding a Weave Capacity is a matter of updating a standard Holochain hApp in a few ways.</p>
+        <p>Coding a Weave Tool is a matter of updating a standard Holochain hApp in a few ways.</p>
         <p>It's trivial (a 5 minute task) to simply update your hApp to run in the context of a Weave Frame,
            this just involves getting the <code>AppAgentClient</code> from the Frame instead of building it directly
            using the <code>holochain-client</code> library. </p>
         <p>It takes a little more work to add support for other aspects of the Weave Integration Protocol, but each of these affordances (searching, linking, embeding, creating) can be added one piece at a time and are not a heavy lift. Detailed instructions for how to add  can be found in the <a class="linkable" href="https://www.npmjs.com/package/@lightningrodlabs/we-applet">client npm package docs</a></p>
-        <p>But the easiest approach may simply be to clone any one of the projects above (clicking on the icon takes you to each Capacity's github repo), and modify it to your needs.  That's what we often todo!</p>
+        <p>But the easiest approach may simply be to clone any one of the projects above (clicking on the icon takes you to each Tools's github repo), and modify it to your needs.  That's what we often todo!</p>
       </div>
     </div>
   </div>

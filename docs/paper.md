@@ -26,21 +26,21 @@ One such substrate that matches these criteria is **Holochain**, which is built 
 
 Notice that large scale society is build out of many types of these Social DNAs assembled in many ways.  Some of the types include those Social DNAs that can be used to:
 
-1. define "social contexts" i.e. as a membrane to manage membership of individuals into the social context.  These are the the games of "Who".  Call Social DNAs of this type **Groups**
-1. define functional components for the group (chat, document editing, KanBan board, drawing).  These are the games of "What". Call Social DNAs of this type **Capacities**
-1. hold, and make sense of templates, or starting points, which can include SocialDNAs themselves, or initial content for **Capacities**. Call Social DNAs of this type **Libraries**
+1. define "social contexts" i.e. as a membrane to manage membership of individuals into the social context.  These are the the games of "Who".  Call Social DNAs of this type **Membranes**.  Call instances of Membranes **Groups**.
+2. define functional components for the group (chat, document editing, KanBan board, drawing).  These are the games of "What". Call Social DNAs of this type **Capacities**.  Call instances of Capacities **Tools**.
+3. hold, and make sense of templates, or starting points, which can include SocialDNAs themselves, or initial content for **Capacities**. Call Social DNAs of this type **Sources**.  Call instances of Sources **Libraries**.
 
-## Instantiation
-Notice that Cells (instances of these DNAs) and the UIs to access them must exist inside some run-time application.  This is similar to how web-sites are accessed using a "web-browser".  Call the type of computer application used to access Group, Capacity & Library instances a **Frame**.  Any Frame will be expected to manage the creation and display of these different types of Social DNAs in meaningful ways.
+## Instantiation & Runtime
+Notice that Cells (instances of these DNAs) and the UIs to access them must exist inside some run-time application.  This is similar to how web-sites are accessed using a "web-browser".  Call the type of computer application used to access instances of Membranes, Capacities & Sources (Groups, Tools & Libraries) a **Frame**.  Any Frame will be expected to manage the instantiation and display of these different types of Social DNAs in meaningful ways.
 
 ## Composablity
-Notice the level of power that arises when Capacities are interoperable and composable by end-users.  For example, imagine composing a chat capacity into a document editing capacity so that a group's members can converse about documents in context, without having this functionality be added by software developers.  For this to be possible a number conventions and protocols must be adhered to by Frames, just like how web-browsers (Chrome, Firefox or Brave) all adhere to common definitions of HTML, CSS, Javascript, DOM, etc.
+Notice the level of power that arises when Tools are interoperable and composable by end-users.  For example, imagine composing a thread from a chat tool into a document from a collaborative editing tool such that a group's members can converse about documents in context, without having this functionality be added by software developers.  You can think of this as "very-late-binding".  For this to be possible a number conventions and protocols must be adhered to by Frames, just like how web-browsers (Chrome, Firefox or Brave) all adhere to common definitions of HTML, CSS, Javascript, DOM, etc.
 
 Call the conventions around how Cells can be composed and interoperate: the **Weave Interaction Pattern (WIP)**.  The WIP creates standards for the *things* that are managed by the Cells, how to declare and interpret their meaning, how to establish relationships between them, how to create, view and interact with them, how to search for things you know exist, discover new things meaningful to you, and how to help manage attention as things change.
 
 ### Things
 
-Capacities provide access to, creation and modification of coherent units of data.  Call such a unit an **Asset**.
+Abstractly, Capacities provide access to, creation and modification of coherent units of data.  Call such a unit an **Asset**.
 
 ### Meaning
 
@@ -50,15 +50,15 @@ As a coherent data unit, an Assets must be interpreted meaningfully.  Assets typ
 
 ### Relations
 
-Capacities compose with other abilities by being able to link to their assets.  Call a link to an asset a **Weave Asset Locator (WAL)**.  A WAL is like a URL for the web but is used to identify an Asset.  A WAL consists of a Holochain Resource Locator (HRL) + Asset Identifier.
+Capacities compose with other Capacities by being able to link to their Assets.  Call a link to an Asset a **Weave Asset Locator (WAL)**.  A WAL is like a URL for the web but is used to identify an Asset.  A WAL consists of a Holochain Resource Locator (HRL) + Asset Identifier.
 
 ### Presentation
 
 Capacities define the following UI elements:
 
-1. "Main" renderer: presents contextually relevant UI when an end-user selects the Capacity in general instead of a specific Asset.  This rendered will usually include UI to create and administer new Assets.
+1. "Main" renderer: presents contextually relevant UI when an end-user selects the Tool in general instead of a specific Asset created by the Tool.  This rendered will usually include UI to create and administer new Assets.
 1. Asset renderer: presents a specific Asset given a WAL.
-1. Create renderer: presents UI that can create an Asset of a given type.  Note that a create renderer must collect any appropriate information needed to create the Asset type (i.e. if the asset is a KanBan card, the capacity to specify which board and column in which to add the card).  The create renderer returns a WAL for the created asset, because this renderer may have been activated at the request of a different Capacity that wants to store a link the created Asset.
+1. Create renderer: presents UI that can create an Asset of a given type.  Note that a create renderer must collect any appropriate information needed to create the Asset type (i.e. if the asset is a KanBan card, the capacity to specify which board and column in which to add the card).  The create renderer returns a WAL for the created asset, because this renderer may have been activated at the request of a different Tool that wants to store a link the created Asset.
 1. "Cross-instance" renderer:  Such renderers are given access to all of the instances of the same Capacity such that they can provide an end-user a unified experience of all of the assets of that abilities type.  For example a calendar Capacity can display all of a user's events across all of their groups in such a renderer.
 1. Capacities may include other capacity-specific blocks which are made available to be composable by end-users into views.  Such blocks are useful for creating dashboards.
 
@@ -78,8 +78,8 @@ Furthermore we must hold to the truth that information makes sense only in conte
 
 The consequences of these mandates to the WIP are:
 
-- Capacities may define a **Search function**  which implements search across the assets in the Capacity.  This function is triggered by end-users and is called either with a plain-text search string or with a Sematic Tree Regular Expression, and should return any matching Assets.  Thus, the Frame can always return the context of the found items to the user because it knows which abilities are associated with which groups.
-- *Libraries* are available to search for and discover across the range of classes of entities that might exist, i.e. specific information (Assets), functional capacities (Capacities), starting points (templates within Capacities).
+- Capacities may define a **Search function**  which implements search across the Assets created by the Tool.  This function is triggered by end-users and is called either with a plain-text search string or with a Sematic Tree Regular Expression, and should return any matching Assets.  Thus, the Frame can always return the context of the found items to the user because it knows which abilities are associated with which groups.
+- *Libraries* are available to search for and discover across the range of classes of entities that might exist, i.e. specific information (Assets), functional capacities and their instances (Capacities/Tools), starting points (templates within for addition to specific Tools).
 - Capacities may also provide information to the Frame about Asset data that should be indexed for fast searching and propagation. 
 
 ### Attention
