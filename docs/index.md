@@ -134,6 +134,7 @@ description: ""
            this just involves getting the <code>AppAgentClient</code> from the Frame instead of building it directly
            using the <code>holochain-client</code> library. </p>
         <p>It takes a little more work to add support for other aspects of the Weave Integration Protocol, but each of these affordances (searching, linking, embeding, creating) can be added one piece at a time and are not a heavy lift. Detailed instructions for how to add  can be found in the <a class="linkable" href="https://www.npmjs.com/package/@lightningrodlabs/we-applet">client npm package docs</a></p>
+        <p>But the easiest approach may simply be to clone any one of the projects above (clicking on the icon takes you to each Capacity's github repo), and modify it to your needs.  That's what we often todo!</p>
       </div>
     </div>
   </div>
