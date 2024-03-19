@@ -86,4 +86,14 @@ The consequences of these mandates to the WIP are:
 
 Members of social contexts need a ways of managing what to pay attention to.  In the "information age" healthy social fabric depends on respecting and supporting the management and awareness of the critical limited resource of our individual attention. 
 
-Thus, abilities can define a set of **Notification Definitions** that end-users can subscribe to.  Frames can then present unified  present UI for setting notification preferences. 
+Thus, abilities can define a set of **Notification Definitions** that end-users can subscribe to.  Frames can then present unified  present UI for setting notification preferences.
+
+### Services
+
+There are often specific types of functions that all Tools in a group may want to access, for example consider sending SMS or email notifications or messages.  This is a kind of functionality that a given Capacity may define abstractly as desired, but needing to be fulfilled specifically for each given Group.  The WIP defines a **Service Specification** that Capacities can list in the Capacity manifest as being required or optional for instantiation.
+
+### Sources & Libraries
+
+When creating new instances in a Frame, e.g. new Groups, new Tools, or new Assets in a Tool, there always needs to be some kind of source for the instance.  In the context of social fabric, we also operate according to social agreements about how we relate with curating, accessing and interacting with these sources.  In the physical world think of all the social agreements around checking out books in lending libraries.  Think about the code package management systems like NPM or Crates.io.  Think about stock-photo websites.  The Weave Interaction Pattern therefore supports a grammar for creating, and interacting with Sources in general and instances of Sources as Libraries in specific.  
+
+The most prominent Library in a Frame is the Tool Library where end-users can add to Tools into groups.  Additionally specific entries in the Tool Library can specify other instantiated Libraries for the Tool.  For example, a Games Tool, may point to an existing Game Library from which to instantiate game Assets into a given instance of the Game Tool.  That Library will probably, not necessarily, be maintained by the the Capacity Developer.
