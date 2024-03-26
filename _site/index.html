@@ -1,0 +1,257 @@
+<header>
+  <div class="header-content">
+    <div class="header-content-inner">
+      <h1 class="home-heading">The Weave</h1>
+      <hr style="margin-bottom: 1em;" />
+      <p class="header-text">Open standards and implementations for growing thrivable social fabric.</p>
+      <p><a href="#about" class="btn btn-primary btn-xl page-scroll">Explore</a></p>
+    </div>
+  </div>
+</header>
+<section class="bg-primary" id="about">
+  <div class="container">
+    <div class="row text-center">
+      <h2 class="section-heading">Growing Thrivable Social Fabric</h2>
+      <hr class="light" />
+    </div>
+    <div class="row text-left">
+      <div class="col-lg-6 col-md-6">
+        <p>The social fabric of complex and healthy societies is composed of many interlocking social agreements involving many community subsets.</p>
+        <p> We provide a grammar and implementation of a set of open protocols and standards for spinning up all kinds of small social agreement units and weaving them together in a meaningful and easy to use way.</p>
+        <p style="font-weight:bold; font-size:180%;">The Weave:</p><ul>
+          <li class="text-faded">allows groups to embody their social context without any centralized infrastructure</li>
+          <li>enables collaboration with fit-for-purpose group-ware <i>Tools</i></li>
+          <li class="text-faded">makes "own-your-data" real by design</li>
+          <li>allows you to search all of your data across the groups you are part of</li>
+          <li class="text-faded">grows with network-effects as <i>Tools</i> are added to the ecosystem </li>
+          <li>centers groups and their members, not large corporate silos</li>
+        </ul>
+      </div>
+      <div class="col-lg-6 col-md-6">
+        <div class="about-image"></div>
+      </div>
+      <div class="col-lg-6 col-md-6">
+        <p>What we now call "The Web" was the result of three critical new open standards: HTML, HTTP and the URL.  These allowed anybody to publish documents and link to them from other documents.  The advent and Javascript and CSS made it so these documents were both beautiful and as functional as any computer program.  </p>
+        <p> But none of those open standards enabled creation and management of <i>social context</i> by groups.  So, that critical function has become siloed into the big corporate websites:  Facebook holds group's "Page", GitHub holds your code, GSuite holds your collaboration tools.</p>
+        <p><a class="linkable" href="https://holochain.org"><i>Holochain</i></a> is an open standard that delivers creating small functioning units of <i>social context</i>, in a way that is both scalable, and decentralized.  To that we now add the <strong>Weave Interaction Pattern</strong>, an open standard for creating, searching, linking and organizing these <i>social context</i> units into complex social fabric that yields "The Weave".</p>
+      </div>
+      <p class="aligncenter"><br /><a href="#technical" class="btn btn-default btn-xl page-scroll sr-button">Go Deeper</a>
+      &nbsp;<a href="#tryit" class="btn btn-default btn-xl page-scroll sr-button">Try It</a></p>
+    </div>
+  </div>
+</section>
+<section class="bg-dark" id="technical">
+  <div class="container">
+    <div class="row text-center">
+      <h2 class="section-heading">Technical Overview: Draft--March 2024</h2>
+      <hr class="light" />
+    </div>
+    <div class="row text-left">
+      <div class="col-lg-12 col-md-12">
+      
+      
+<p>The social fabric of complex and healthy societies is composed of many interlocking social contracts involving many community subsets.  We propose a grammar and implementation of <strong>The Weave</strong>, of a set of open protocols and standards for spinning up all kinds of small social agreement units and knitting them together in a meaningful and easy to use way.</p>
+
+<h2 id="social-substrate">Social Substrate</h2>
+
+<p>We start with substrate that provides the capacity to instantiate small social-contract units.</p>
+
+<p>Call the templates for instantiating these units <strong>Social DNAs</strong> or <strong>Rules of Engagement</strong>
+Call instances of instantiated Social DNAs <strong>Cells</strong></p>
+
+<h3 id="distributed-context">Distributed Context</h3>
+
+<p>The specific nature of this substrate is important (see “Considerations” below), but the most critical ones are that:</p>
+<ol>
+  <li>any group of agents that wants to interact according to a Social DNA can do so, i.e. that there is no intermediary enforcing the rules of engagement.</li>
+  <li>any single agent always has full and complete access to any data they contributed to the social context.</li>
+</ol>
+
+<p>These criteria make possible some of most important functional aspects of the Weave as will be described below.</p>
+
+<p>One such substrate that matches these criteria is <strong>Holochain</strong>, which is built out of:</p>
+<ol>
+  <li>a distributed, validating data store (integrity zomes + graphing DHT)</li>
+  <li>with mutation described by clear API (coordinator zomes)</li>
+  <li>where each set of validation rules comprises a separate network of participating agents, co-holding and validating the actions of other agents.</li>
+</ol>
+
+<h2 id="typology">Typology</h2>
+
+<p>Notice that large scale society is build out of many types of these Social DNAs assembled in many ways.  Some of the types include those Social DNAs that can be used to:</p>
+
+<ol>
+  <li>define “social contexts” i.e. as a membrane to manage membership of individuals into the social context.  These are the the games of “Who”.  Call Social DNAs of this type <strong>Membranes</strong>.  Call instances of Membranes <strong>Groups</strong>.</li>
+  <li>define functional components for the group (chat, document editing, KanBan board, drawing).  These are the games of “What”. Call Social DNAs of this type <strong>Capacities</strong>.  Call instances of Capacities <strong>Tools</strong>.</li>
+  <li>hold, and make sense of templates, or starting points, which can include SocialDNAs themselves, or initial content for <strong>Capacities</strong>. Call Social DNAs of this type <strong>Sources</strong>.  Call instances of Sources <strong>Libraries</strong>.</li>
+</ol>
+
+<h2 id="instantiation--runtime">Instantiation &amp; Runtime</h2>
+<p>Notice that Cells (instances of these DNAs) and the UIs to access them must exist inside some run-time application.  This is similar to how web-sites are accessed using a “web-browser”.  Call the type of computer application used to access instances of Membranes, Capacities &amp; Sources (Groups, Tools &amp; Libraries) a <strong>Frame</strong>.  Any Frame will be expected to manage the instantiation and display of these different types of Social DNAs in meaningful ways.</p>
+
+<h2 id="composablity">Composablity</h2>
+<p>Notice the level of power that arises when Tools are interoperable and composable by end-users.  For example, imagine composing a thread from a chat tool into a document from a collaborative editing tool such that a group’s members can converse about documents in context, without having this functionality be added by software developers.  You can think of this as “very-late-binding”.  For this to be possible a number conventions and protocols must be adhered to by Frames, just like how web-browsers (Chrome, Firefox or Brave) all adhere to common definitions of HTML, CSS, Javascript, DOM, etc.</p>
+
+<p>Call the conventions around how Cells can be composed and interoperate: the <strong>Weave Interaction Pattern (WIP)</strong>.  The WIP creates standards for the <em>things</em> that are managed by the Cells, how to declare and interpret their meaning, how to establish relationships between them, how to create, view and interact with them, how to search for things you know exist, discover new things meaningful to you, and how to help manage attention as things change.</p>
+
+<h3 id="things">Things</h3>
+
+<p>Abstractly, Capacities provide access to, creation and modification of coherent units of data.  Call such a unit an <strong>Asset</strong>.</p>
+
+<h3 id="meaning">Meaning</h3>
+
+<p>As a coherent data unit, an Assets must be interpreted meaningfully.  Assets types are thus defined by:</p>
+<ul>
+  <li>Asset Identifier definition:  A schema that describes how and asset can be identified, e.g. index, hash, uuid, etc.</li>
+  <li>Asset Semantic Tree definition: A schema that describes semantically the content of the Asset which can be used to retrieve parts of the Asset, as well as to subscribe to Asset changes.</li>
+</ul>
+
+<h3 id="relations">Relations</h3>
+
+<p>Capacities compose with other Capacities by being able to link to their Assets.  Call a link to an Asset a <strong>Weave Asset Locator (WAL)</strong>.  A WAL is like a URL for the web but is used to identify an Asset.  A WAL consists of a Holochain Resource Locator (HRL) + Asset Identifier.</p>
+
+<h3 id="presentation">Presentation</h3>
+
+<p>Capacities define the following UI elements:</p>
+
+<ol>
+  <li>“Main” renderer: presents contextually relevant UI when an end-user selects the Tool in general instead of a specific Asset created by the Tool.  This rendered will usually include UI to create and administer new Assets.</li>
+  <li>Asset renderer: presents a specific Asset given a WAL.</li>
+  <li>Create renderer: presents UI that can create an Asset of a given type.  Note that a create renderer must collect any appropriate information needed to create the Asset type (i.e. if the asset is a KanBan card, the capacity to specify which board and column in which to add the card).  The create renderer returns a WAL for the created asset, because this renderer may have been activated at the request of a different Tool that wants to store a link the created Asset.</li>
+  <li>“Cross-instance” renderer:  Such renderers are given access to all of the instances of the same Capacity such that they can provide an end-user a unified experience of all of the assets of that abilities type.  For example a calendar Capacity can display all of a user’s events across all of their groups in such a renderer.</li>
+  <li>Capacities may include other capacity-specific blocks which are made available to be composable by end-users into views.  Such blocks are useful for creating dashboards.</li>
+</ol>
+
+<h3 id="discoverysearch">Discovery/Search</h3>
+
+<p>There are some important distinctions that we start from regarding how we find and find out about things:</p>
+
+<ul>
+  <li><strong>search</strong>: I know [thing] exists but I don’t remember where. I need to <em>search</em> for it.</li>
+  <li><strong>discovery</strong>: I’m confronted with a specific need or challenge and am looking for a thing that I don’t yet know exists that helps me with that (active discovery). Or I discover something accidentally that I realize (or will remember later) is useful in a context I’ve been in the past or will be in the future (passive discovery).</li>
+  <li><strong>propagation</strong>: I discovered something useful and want it to propagate to people in similar contexts.</li>
+</ul>
+
+<p>Furthermore we must hold to the truth that information makes sense only in context. These understandings create some mandates in the context of the Weave:</p>
+
+<ol>
+  <li>searching should respect boundaries</li>
+  <li>context should move with information.</li>
+  <li>information should propagate along axes of contextual similarity</li>
+</ol>
+
+<p>The consequences of these mandates to the WIP are:</p>
+
+<ul>
+  <li>Capacities may define a <strong>Search function</strong>  which implements search across the Assets created by the Tool.  This function is triggered by end-users and is called either with a plain-text search string or with a Sematic Tree Regular Expression, and should return any matching Assets.  Thus, the Frame can always return the context of the found items to the user because it knows which abilities are associated with which groups.</li>
+  <li><em>Libraries</em> are available to search for and discover across the range of classes of entities that might exist, i.e. specific information (Assets), functional capacities and their instances (Capacities/Tools), starting points (templates within for addition to specific Tools).</li>
+  <li>Capacities may also provide information to the Frame about Asset data that should be indexed for fast searching and propagation.</li>
+</ul>
+
+<h3 id="attention">Attention</h3>
+
+<p>Members of social contexts need a ways of managing what to pay attention to.  In the “information age” healthy social fabric depends on respecting and supporting the management and awareness of the critical limited resource of our individual attention.</p>
+
+<p>Thus, abilities can define a set of <strong>Notification Definitions</strong> that end-users can subscribe to.  Frames can then present unified  present UI for setting notification preferences.</p>
+
+<h3 id="services">Services</h3>
+
+<p>There are often specific types of functions that all Tools in a group may want to access, for example consider sending SMS or email notifications or messages.  This is a kind of functionality that a given Capacity may define abstractly as desired, but needing to be fulfilled specifically for each given Group.  The WIP defines a <strong>Service Specification</strong> that Capacities can list in the Capacity manifest as being required or optional for instantiation.</p>
+
+<h3 id="sources--libraries">Sources &amp; Libraries</h3>
+
+<p>When creating new instances in a Frame, e.g. new Groups, new Tools, or new Assets in a Tool, there always needs to be some kind of source for the instance.  In the context of social fabric, we also operate according to social agreements about how we relate with curating, accessing and interacting with these sources.  In the physical world think of all the social agreements around checking out books in lending libraries.  Think about the code package management systems like NPM or Crates.io.  Think about stock-photo websites.  The Weave Interaction Pattern therefore supports a grammar for creating, and interacting with Sources in general and instances of Sources as Libraries in specific.</p>
+
+<p>The most prominent Library in a Frame is the Tool Library where end-users can add to Tools into groups.  Additionally specific entries in the Tool Library can specify other instantiated Libraries for the Tool.  For example, a Games Tool, may point to an existing Game Library from which to instantiate game Assets into a given instance of the Game Tool.  That Library will probably, not necessarily, be maintained by the the Capacity developer.</p>
+
+      </div>
+      <p class="aligncenter"><br /><a href="#tryit" class="btn btn-default btn-xl page-scroll sr-button">Try It</a><a style="margin-left:10px;" href="#developers" class="btn btn-default btn-xl sr-button page-scroll">Develop The Weave</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="bg-primary" id="tryit">
+  <div class="container">
+    <div class="row text-center">
+      <h2 class="section-heading">Moss</h2>
+      <hr class="light" />
+    </div>
+    <div class="row text-left">
+      <div class="col-lg-8 col-md-8">
+        <p><strong>Browsers</strong>, like Firefox and Chrome are the programs that allow you to, well, browse the documents served up by web servers.
+        </p>
+        <p><strong>Frames</strong> are the programs that let you create, access and weave together Holochain hApps into the social fabric of The Weave</p>
+      </div>
+      <div class="col-lg-4 col-md-4">
+        <p><img style="width:100px;float:left;margin-right:10px;" src="/images/moss_icon.png" /> <a class="linkable" href="https://github.com/lightningrodlabs/we/releases/tag/we-alpha-v0.10.7">Download and try Moss</a>, our reference implementation of a Frame for The Weave</p>
+      </div>
+      <div class="col-lg-12 col-md-12">
+        <p class="screenshot-image aligncenter"></p>
+      </div>
+      <h3 class="aligncenter">Tools</h3>
+      <div class="col-lg-6 col-md-6">
+        <p> A core feature of The Weave is the the ability for groups to pick the fit-for-purpose tooling that's appropriate for each group, and, as desired add specific new tools as the group's purpose and needs evolve.</p>
+        <p>Assets generated in one Tool can be linked to and embedded in Assets created by other tools.  This createas an
+        "asset-centric" computing environment rather than the usual application centric model.</p>
+        <p>Here are a number of Tool capacities that have allready been developed that you can use to get a feeling for the power of this approach:</p>
+        <div class="capacities">
+          <div> <a href="https://github.com/lightningrodlabs/vines"><img class="capacity-logo" src="https://lightningrodlabs.org/projects/vines.svg" /> </a><span><strong>Vines: </strong> Provides the usual chat functionality: topics, channels, attachments, mentions, etc.</span></div>
+          <div> <a href="https://github.com/lightningrodlabs/slate"><img class="capacity-logo" src="https://lightningrodlabs.org/projects/slate_icon.svg" /> </a><span> <strong>Slate: </strong> Provides real-time collaborative drawing. Fully featured diagrams and drawing tools based on the <a class="linkable" href="https://excalidraw.com/">Excalidraw</a> open-source library.</span> </div>
+          <div> <a href="https://github.com/lightningrodlabs/notebooks"><img class="capacity-logo" src="https://lightningrodlabs.org/projects/notebooks_logo.svg" /> </a><span> <strong>Notebooks: </strong> Provides real-time collaborative editing of MarkDown documents. Includes syntax-highlighting, version history, and more.</span> </div>
+          <div> <a href="https://github.com/holochain-apps/kando"><img class="capacity-logo" src="/images/kando_icon.png" /> 
+            </a><span> <strong>KanDo: </strong> provides robust KanBan functionality with commenting, assignments, labels, categories, checklists and more. </span> </div>
+          <div>
+            <a href="https://github.com/matthme/unzoom"><img class="capacity-logo" style="height: 50px; width: 50px; border-radius: 5px; margin-right: 10px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAYAAAB5fY51AAAAAXNSR0IArs4c6QAAIABJREFUeF7tnQd0VNXWx/+TNpPeIKF3VKyAICgdVIogvXdC751QQgiBACEEkgAJJPTQexFUFKzYn6hPBQURG02l15DkW/sO8xjyQTJzc8+de2f2Wetb33Nx7z77/s7Jf07ZZx9D0JOtcsGFCTABJqADAgYWLB20ErvIBJiARIAFizsCE2ACuiHAgqWbpmJHmQATYMHiPsAEmIBuCLBg6aap2FEmwARYsLgPMAEmoBsCLFi6aSp2lAkwARYs7gNMgAnohgALlm6aih1lAkyABYv7ABNgArohwIKlm6ZiR5kAE2DB4j7ABJiAbgiwYOmmqdhRJsAEWLC4DzABJqAbAixYumkqdpQJMAEWLO4DTIAJ6IYAC5ZumoodZQJMgAWL+wATYAK6IcCCpZumYkeZABNgweI+wASYgG4IsGDppqnYUSbABFiwuA8wASagGwIsWLppKnaUCTABFizuA0yACeiGAAuWbpqKHWUCTIAFi/sAE2ACuiHAgqWbpmJHmQATYMHiPsAEmIBuCLBg6aap2FEmwARYsLgPMAEmoBsCLFi6aSp2lAkwARYs7gNMgAnohgALlm6aih1lAkyABYv7ABNgArohwIKlm6ZiR5kAE2DB4j7ABJiAbgiwYOmmqdhRJsAEWLC4DzABJqAbAixYumkqdpQJMAEWLO4DTIAJ6IYAC5ZumoodZQJMgAWL+wATYAK6IcCCpZumYkeZABNgweI+wASYgG4IsGDppqnYUSbABFiwuA8wASagGwIsWLppKnaUCTABFizuA0yACeiGAAuWbpqKHWUCTIAFi/sAE2ACuiHAgqWbpmJHmQATYMHiPsAEmIBuCLBg6aap2FEmwARYsLgPMAEmoBsCLFi6aSp2lAkwARYs7gNMgAnohgALlm6aih1lAkzA5QXL398fPt4mlCheFEFBAcjKysKZMxdw6vQfyMnJ4R7CBJiAhgi4pGC5ubnhqSefwPixIxBetKjUHAYD4GsywNtkkP77q6PfY8LUeFy+fFVDzcWuMAHXJuBygkViNXniGNR9qTYMpFJ5ioc7EOjvBjcD8NeZ8xg6Jga//3HGtXsJfz0T0AgBlxIsTw8PRE2ZiBdqVs8Xv7ubWbTo/5879zcGj47Gb7+zaGmkz2rCDfrhCwsrgqKhoQgPK4LQ0CAE+PvBx9uI3Nwc3LhxExcvXcG5C//g99//wu9/nuUlBgVazmUEy9vbGzOnT8YzTz9pEzYafAUHmEXrTlYWuvUdh1O//mHTu/yQ8xFwd3dHaEgIqlV9Bg0b1MUzTz0JDw+PR34ojdS9PA0weRlgcAMuXbqMfQcOY9+b70kj95s3bzkfJBW+yCUEizrb7JlRqPrs03YhdXMzixZND+nXMmLoFJz+7S+7bPDD+ifwYq2aGNi/D0JCgmH08rL7g+jHz9PDAD8fA3Jzs3Hx4mVs2LwXmZv3ICcn1257rvyC0wuWh4c7ZkyLRI3nq8lqZxphBdGalhuvackCqNOXTCYTmjd9GU1faYxyZcso9hU06vIxGeDpAfzx51lkbtqDHXsOIjs7W7E6nNmQUwuWr68vYqOn4MkqjxeqDaXpIa1puQPXrt9E38GR+OXU74WyyS9rk4DRaJTWOPv37YnwsDBhTnobDfDxNkij9/8c/R6x85byOqkNtJ1WsGgauChhDipXqmADhoIfIdEKoekhrWndyULnXqPxG+8eFgxOR0+UKV0KCXNnIiAgQDWvqU/RDyGNsIaNnYkvvvpOtbr1WJHTCtag/n3QtnVLRdvEenp49twFDB8bKwWYctE3gdKlSmJAv154vno1uFMjq1joh9DP2wCT0YCsrLtYvCxTmiZyeTgBpxQs2hHMXLUMvr4+irc7jbCC/My/iv/8ewmDR0bjl195eqg4aBUMBgcHoVWLZmjXphVMJqMKNT7ijxCQFuRJtO5mZyNh0Qps2/UWcnN5QT4vMacUrLp1XsS0yHHCOqB1yAP9KnbrN47XtITRVt6wp6cnar9QA2NHDYO3t0n5CmRapM0dWoynMJqIIVPww7GTMi0572tOKVhtW7+GQf37Cm01KeTh3u6hNNIaFc2iJZS4MsYrVaqASWNHoWTJ4qDgTy0V682d6zduomufsfjzr3NactHhvjilYNV6oQZioiKFw5Wmh/ci4s+e+xtDx8zgOC3h1OVVUKpkCXTt3B6NGtTTnFBZfxGNsKhPUfnwyJcYO2kOcnhq+D9ETilYFIG8cV0G/P385PVuO96y/lWkTA89+0/EzydP22GBHxVJgPpAk0YN0LdPd1lBnyJ9e5RtitPy9Tafc12QvBIbtuxzhBuarNMpBYtI9+7ZFV07tVcFOsXSSBHxbpCOXPQaOImnh6qQz7+S2rVqYtzoYar8cCn5udYhNJevXMXLLfvyOcR7gJ1WsLxNJowYNgiNG9ZTsi890tYDB6bP/42RE2bjBI+0VGGft5LKlSqif7+eePrJKqB4PD0WOotIU0MSr6+/+UFaI717l6PhnVawqJPS8YrJE0bjhZrPPzSVjNIdmToXdTLqbFeuXsOgEdPx04lfla6G7T2CQHh4GNq1bonXWzZXpb1FN4T/vVAHqmfE+Fgc+fRr0VVq3r5TC5aFfsy0SNSqVUOVxrAOeaDoZcrycOKX31Sp21UroTXLJo3rY/jggfCkVWsnKbTUEBJoHmXRpk6bzkORdfeuk3ydvM9wCcGikdaIIQPQpHEDeZTsfMt6evj3PxcxYlwsj7TsZGjr47Vr1UBE7x4oXbqUra/o6jlKT+Pva16AT1uxCemrtujKf6WddQnBImg+3t4YM3Io6tZ5eKZRpcHSr6MU8iBFxF+Uzon9fIJ3D5XiXLFCeXTt1A4v1q6l+nEapb7BFjvWI/Z//rmEjj1HgRbiXbW4jGBRA1OgYNSUCaj9Qk1pmC26WIc80IUWFPJw7KdfRFfr1PbpYHKHtq3QsUMbGKBCI2qApru7ASEB5m/94KMvMG7KPJfdNXQpwaIGp/WOsSOHonGj+qp0RWmkdS9z6bVrNzBwZBSO/3RKlbqdrZJXmjSSDikHBPg726cV+D2BfgYpgykdBevSZyx+ddFD9y4nWJbp4ZBBEXilScMCO4oSD1gfmD5/4V+Mnjgbx39m0bKFLV0UUr3ac+jetSOefKJwec1sqU+rz9C6KMX60aj9x2Mn0XfIFOlKOlcrLilY1MheXl6InDAalP72YbfnKN0RrEMebt68jQHDp+HH43y4NT/OJUuWQJeO7dCkUX1NH6dRuq88yh5Fv1MUPJUZs1Ow98BhtarWTD0uK1iWFqArvxrUq6NKg+Rd0+oeMR4//cxxWnnh0w9Iz+6d0a1zB1XaRS+VUP8JDXKTVu7Onv0bLTsOcrkUNC4vWJQHiZL9NW/6iir9Nm8+rTGRc/D9Dz+rUrfWKyGhonN/3bp0QInixbTurkP88/IEAv3Mh6PpjCGdNXSl4vKCRY1tMhoxeuRQNKj3kurTQ7pZevi4mS6d+4iEivLu9+jaCdWqPutKf392fyuNrmgTh05TUHhD+24jpBudXKWwYFm19LTI8ajzUi3VRYtCHnoPnOSSohUUGIg+vbpJt9OosZboDH/YHu4GBN8Lczjy2VGMmjDLZcIcWLCsejBlohw6sB+aN1N/enjlyjUMHx/rUtPD7l07oU2r5vD3d70whcIKJ0W/UxQ8lYEjovDV198X1qQu3mfBytNMtKY1eEA/1X7xaU2L1iRoiP/PPxcxauJs/HjceYNLaRRV96XaUjK9CuXL6eKPRItO0gkKynhLC/H//eEnRAydhrsucM6QBeshvZEuX504bhTq1XlRlWmKdchDdnaOdMP0d9//pMW/E9k+kVBR1s+BEb1Rs0Z12Xb4xfsE6G5DuryCyvxFGdi0bb/T42HBekQTu7kZpLOHFF2tRnkwc+ld9B82Ff91kt1DmmoPGdQPTV9urNv8VGr0AXvrkMIc7mVzOHPuAlq2H2SvCd09z4KVT5PRLcB0A3Cr15qp0rDmkAcD6OwYXWwxYco8fPPf46rULaISOrvZ5vXX0LpVC4SHFRVRhcvb9PQ0XztHZceetxE3Pw3OnAKeBauALu/l5YnRI4agIV1eoMKJafP00ADaCbp2/QaGj52pu+khCVXVZ59B397dQNk/uYglEOjvBi+6HuxOFrr2pXOGf4qt0IHWWbBshD9h3Eg0blBPxTUts2jRZZp9BkXqYnpI61Q+Pt6YMnEsnq9e1Uay/FhhCViHOXz48VcYExnntBHwLFg29hZah6HpIU1v1Cjm3UOzaFFw6dgp83D0mx/UqFpWHTR97tOzG159pRF8fZS/cVuWUy70kp+PG7zvXV49fso8HP7gM6f8ehYsO5rV6OWFQQP6onnTl1UZaVFqmsB708NLl65Kv5zfamxNiy55aNKoHjp3bI+SJYrbQZMfVZIAZXOgdMpU6FB9rwGTnDKYlAXLzl5D6zN0dVTjhvVVES3rNS1aTKWQh2++O2an18o/TtM/iqMaPXwIKleuoHwFbNFuAiajAXRxBZUFyauwYcteu21o/QUWLBkt5O7uhsH9+6JVy+Yy3rb/FWvRunnrtpQjnq5+cmQZPmSAFFxLU2Uu2iBgnU6Z7hJo13U46Mp7ZyosWDJbk6aHfXp1R5vXW6gy0rKOiP/34mVMnDbfYaLVq0cXKU8VjTa5aIuA0cuAAMulFRmbkL7auS6tYMEqRH+jdMujhg9WLcEc/YLSMR66yerW7TsYNiYGR7/9sRBfYP+rlPZlxbIUVUTafu/4DSJAYTGeHuYd5lYdB+PM2QtOA4YFS4GmHDV8kGr5tKyP8ZDrEUOm4KiKa1oN69dB5IQxClBjE6IIGL2AAF/z6DctYyPSV28VVZXqdlmwFEBO6zi9e3RBh3atFbBWsAnr6SGFPEROX4DPv/q24BcVeKIXZQLt0lEBS2xCFAHrtSzqH691GISbN2+Jqk5VuyxYCuEm0Rp8L+RBjbUd6+nh1WvXMWbSHFXWtNq3fV26uYaLtgkYPQ0I8DPvGKakZWJ15g5tO2yjdyxYNoKy9TE6MP3qy41UWeORsk/6u8Hj3u3sdLHFf46K3T18+qkqSJgbaysOfs5BBKyvuf/h2En07D/BQZ4oWy0LlrI8pWwEdIauQ1uVpodScKk5n9aNGzelSzY//1Lc9NBo9MK6lctc8m5AhbuKcHO0QUM54O9kZaHeK91w92628DpFV8CCJYCwZU2rXZtWqmz9myPizaJ16fIVKeRBZAbK8PAwLJg3C0VCQwTQY5NKEaDdZBqBU5k1LxU79x5UyrTD7LBgCULv7uYGKbjy1SaqiJb1mhYlARw6JgZf/uc7QV8HVK5UATFRkxESEiysDjZceAJF6FowA/DFl99h8Ojowht0sAUWLIENQMdX6AoxygmlRpFEy98Nnu4AidbwsTH4/CtxolWubBmkpixQZb1ODX7OWAfdFk0jb5oW1mnSBTk5ubr+TBYswc3n6emB7l06oXPHtqr8YVPIA8Xg0HSAtrSnzVyEI599Lewry5Uri/jZM3hNSxjhwhmmKSH1hezsbDRu0VvKsabnwoKlQutRRPyAiN5o2fxVVVIE0+6hNNLyAG7cvIWxkXPwhcCRVqWK5RE9dRKKFi2iAk2uwh4ClKLIy9MgjbibtYkAHevSc2HBUrH1hg2KQMvXmqky0qLPsvy60v8ePCpaqGjR9HDh/Nnw9vZWkShXVRABGm1T5Ht2Tg5atB0AOhSt58KCpWLrUchD9y4dpavY1SjWa1o0FaDp4YcffymsahKtpAVzQMn8uGiDwP8EKzsHTdtE4CKPsLTRMHrxgqaHlO2gfZtW6kwPrQ5MX7l6HZHTE/DZF98Iw1W2TGnEzpiKMJ4eCmNsj2FLLBatYTVq3kv36WZ4hGVP6yv0LO0eDhnYD681bwrKraVGsZ4eUsiDSNEqX64s4mZGITg4SI1P4zryIWBp95s3b6N+0268S8i9RR4BEq3ePbqiS6d28gzY+ZZ1nBZtcY+fEo+PP/nKTiu2P16mdCmkLU5UJQbNdq9c70lKm0y/iUc+/Rojxuv/SBWPsBzYh2l62KVjWyn7gWoHpn0N8PQ04PKVa5g+KwkfHREnWqVLlcTc2TMQysGlDull9CNFgaNUYuJSsGf/YYf4oWSlLFhK0pRhi6aE/fv2wuuvNYc7RfipUOiyVhKt23fuYGzkXHz6+VFhtdJC/MzpkxHGF6kKY/wow5bso1lZWWjUordTpJhhwVK9Gz28wog+PaR8WjRVVKNYRIvqGjl+Fj7+9D/Cqi1VsgSWJifAy8tLWB1s+P8TsKxfnfzlN3TqNdopELFgaaQZzSEPHVRLjmde0zKn0qV8WjFxi4XeZUdrWonxs+Dn56cR4s7thnV6mU3b9mP+ogyn+GAWLA01o7e3CanJC1CsWLgqXpFoUZI3Lw8Drl+/icjoBTgicKRFojUzegqKhYep8n2uXAlFt9MPEm2wdO45Gr/9ccYpcLBgaawZH3+sMhYlxKk2NaTPp8taSbSo0E4S7SiJKmXKlML8uJkIDAwQVQXbBRAcYL41fN+b7yF6VrLTMGHB0lhT0m5h5uplCAlWL22L9fTw1q3biIpNwqH3PxVGhnYPKeSBpsFclCdg9KSRs3l3sEfEBOkmaGcpLFgaa0ladF+SlIAK5cuq6pkkWvdCHq5evY4ZcSl478PPhflQvHgxzJ0VjXDePVSccfC9tNmZm/Zg0ZI10nVfzlJYsDTWkiRYC+fH4YnHKzvEs/un+7OlkIePBAaXli5VCrNjpnLIg4It7WMywNfbIK1Zdes7zilCGazxsGAp2FmUMEWCRQeIH6tcSQlzsmxYQh7ol5lyxL8vcqRVLBwZqcmqxaDJAqKTlygXWkiAm5T7qlOvUTj921868dx2N1mwbGelypO0hrV86SJQ7JKjivX08Nq1G5gVn4qDhz4W5k7JEsWRMCcWwSF89lAuZDp+Q3FXJFoUorJn/yG5pjT9HguWxpqHLrDYnLkSPj6OzytlmR7evHUbk6MXCE1NQwJNIQ8lihfTWIto3x1Lllk3QzYSklZiy44D2ndapocsWDLBiXqtYf26iJygnahki2jR946JnIMPPvpC1KeDRloLE+IQ4O8vrA5nM0yjYRpZ3blzC1OiE/HhEXH5zrTAjgVLC61wzwdav1qTsVRTi9BScKmvOc0uXXdO08M3D34ojFqJEsWxeFE8fDhzaYGM6QLdQF83/Hr6d+lqt1On/yjwHb0/wIKloRYsWiQU61Yt05BHZles17QoIn5GXDIOvf+ZMD8pEj4udjpPD/MhTLuBHu53sW3nm1ixZquUfcMVCguWhlr56SerIGGednMWWU8Px02eKzROq0Tx4pg7ezrCihbVUAs53hWKtaW0x3/8+SfmJizHFwLvnnT81/5/D1iwNNQqjRrUxaTx2lm/youGDu9QBDVdf07XnkfFLsLb74rbPSxeLBzLlyaBrkrjAim+yuiZi+S0ddiyfT/u3MlyOSwsWBpq8h5dO6FHt04a8ughv3DSmpZZtOhiizkJy4SuadFB8Pi4GS490qK8Vr4mA9597yOkr96KX079ruk+ItI5FiyRdO20PXLYILRo9oqdbznmccv0kH7lp8xIFJqahkId6GIL2kV0pUKHl72Nufjtt9NYmr4BHwrMDqsXrixYGmqp8WNG4OXGDTTkUf6uWK9pTYpKwDuHjwjznTKWUuodX18fYXVoxTBtctCIys0tC4vTMrFhyz6tuOZwP1iwHN4E9x0YO2oYXn25kYY8yt8V+sPy96V1FYN0w3R8Yjr2HhCXN5ymh5R6JygwUDeM7HXU20g8c7Bt1wGs3bAb5y/8Y68Jp36eBUtDzTugX2+0b9tKQx4V7EreOK0ZcYuFjrQou8OsmGmgFDXOVGhfwdfbDV99/Q0yVm/B0W9/hBMlWVCsqViwFENZeEOvt2yOoYMiCm/IARasp4cUxPjue58I8yI8PEw6e1i0aKiwOtQyTMdqaPp35cq/WJC8SqjYq/VNIuthwRJJ107bNZ+vJi0u67FYTw9pIT4uYRn2CjyAGx4WJh0SNxr1e7EFCZXJCKSt2ISNW/fhxo2bemx6VX1mwVIVd/6VlS1bGssWL9SQR/a5Ik0PfQzw8jJIV6LPXbAc+9963z4jdjxdtEgRzJsdDTrOo6dCYQo+JuCTz75C0tJ1OPWr64Yp2NtuLFj2EhP4vLfJhM0bVsHL01NgLeJN308CmIOpMYk4eEjs7mFcbBRKlXBcOh57iFLwJx2rOfzBZ5gUNR/Z2Tn2vO7yz7JgaawL0BoWrWXpvVC6ZRppUYmamYT9b4sbaRUJDUF6WjJI8LVcaAfQz8eAP/46hzadhzpV6mK1uLNgqUXaxnr8/HyRuWoZTBr/4yvoc/KGPCQmr8TOve8U9Jrsf6fdQzqHSdNELRZKsBcc6AaS8AXJKzm2SmYjsWDJBCfqNUoxEzczCtWqPiuqClXtUmoaWrO5ffsOYuYsls4eiroUoWjRIpg1YxrKliml6jfaUpnJaIC/j3nESbnWj/98ypbX+Jk8BFiwNNglnn6qCuLjYkDpkp2hWESLvmXKjIV46x1x+bQoRc+iBXMRGqLeNWm2tBFNBWlKSKVBsx6g1NNc7CfAgmU/M1XeiJoyAXVerKVKXaIrkaaHPvdHWgtSVmH7rreEVUspaZYkxcNfQ5lL6YZtOhFApc7LXUH3P3KxnwALlv3MVHmjyhOPSdd9OUuxFq2bt25hXmI69h14T9j0MCQ4CHNmRaNsmdKaQEiCTdNCKq+1H4iz5/7WhF96c4IFS8MtNnHcSDRuWF/DHtrv2gPTw5iFePudj4SJFk0PSbQceQORhZDlvkD67+HjYvHJZ1/bD4/fAAuWhjsBjRJou97Xx7kyFNCBaZOXQYpBooj4XXsPCmuF0JAQZKQlwdvBOeLprCBdFkFlzfpdSE5dK+ybndkwC5bM1jWZjChXphRKlyqGYuFFYDQacfnKFfx84jS+/+FnZN29K9Py/ddox7B3j67o0qldoW1pycAD08Obt7BoyVps3/2WsJFWaGiItInhyHxa9M10ySnto5w9dwGtOg5BTg4HjdrbL1mwHkGM7gcsWiQEvr5+0iHb4KAgVK5YHkWKFMETj1eCn9/9q6jc3Qyg4HRaVKVf0suXr2DvgUPY/cYhnPq1cDeZ0E7hsiULnS47AWG3TA+zsu4iZs4SvHnwA6GiNTtmGsqVLWPv34hiz1uHNog+IK6Y0xoz5LKCRaMXd3d3KXTAw90dPr7eeKlWTVSsWAG1alZHUBDdQmxeJLWnWN8wQ+8tWrwa67fsK9Sv6ctNGmL86OH2uKGbZy3TQ3I4Ji4Fe/aLy6dFbZqanIDgYMfcMO1GoywKHjUAX3z1LQaPmqGbdtKKoy4jWBRB/szTVVCiWHE8/dQTCA4Jli7spOMctP3tQZe8KVRI5uhYCv0x5ubk4j06NzY9QbZoeXi4Szmgqj77jEIeascM/fFSjBKtaVFwaXLaWmzaul+Yg0UoTishDkVCHZOahgSLot7PnL2Adl2H406W610kUZjGdRrBojQjlNQtMCAApUuVQHBwMEqXLomQ4GCULV0K3g5YuKYpAP0xIhfYve8dzFmwHHdlrm1VqlgByYlznSaY1LrT5o3TopCHPfsPCZse0ghrdkwUKpQvW5i/HVnvWqbBlILn1db9cPXqdVl2XPUl3QqWl5cnnnjsMdDVWFWqPI4ypUtp8o/ZOsJ5YlQC3i1E3vOoyeNR56XaTttXrUMeomcn44033xcmWvRDNn/uTNUX4umYEn0nlWFjYvDpF984bXuK+DBdChZtUSfMjUX5cmU0KVJ5Rw80DaD1i3//vSTtDt26LS/Kme7nW52RqrljJ0p1TPozlqaHRoM0EqWI+C3bDyhl/v/ZoZAH2tCg5QK1CvWD0CBzeMPqzB1ISctUq2qnqEd3gkVrTbHRU3R1OJh2D+loBpXMTXuwcPFq2Z2nc8d26Nurm+z3tf6i9ZoWHV+heKUtO94UNtIKCgrE3NnRKFdGvd3DIkHmhfdPPj+K4WNnar1JNOWf7gTr+epVQdvTeirUOYP93UDXjF++cg3tu43AxUuXZX0C7WwuWTQf5cqp9wcmy9FCvmSZHlJwaey8pdh34LBQ0aIMGRXKlyuk17a9bll4/+33M2jbdZhtL/FTEgHdCVb3rh3Rs1tn3TUfBQyGBpqnAj8eO4meAybK/gPUc+53exrOOuSBIuJFHpgOCPBHRmoSAgIC7HFR1rPBARRKA1y6fBVNXusty4arvqQ7wYro0wMd27fRZXvdP5KSjQHDo/DNd8dkfQdNi2fNmIqqzzlfmIM1EOlCUW9zWhYKeaDbj9dv3itb6AuCHRISLK2N0k3TIotFsGi03bhFL5FVOZ1t3QkWXeVOV7rrsdAoizorLbyeOHkafQZF4qbMNCMUR7R86UL4OCBcQ232FqGnmKX4xAzs2veOMNEKDAyQYt4qV6wg7DMtgkWxWC076LMvC4NTgGHdCRalwl2xLEXRQE814XubDPDzNi/AJyStwMatb8iufuzIoXj1lcay39fTi9bTw9i5S7H7jXeFihYFlxYvJmakZVnDostSI4bq81o3R/Ud3QkWgXqt+asYMXSgo5gVql7pEOy9MIe//7mIVh0Hg4II5RQKlk1fmoSwsKJyXtfVO9bTQzp7uCR9PdZt2C3sG2h6uDQpAbSLqHShsAYaZe/YexCz56Uqbd6p7elSsCgOa9mSRFBmST0WTw8DgvzNo6y9+w9Luc7l5jnXs3jb23ZSyIO3OU7r9p07SFm6Dpu370eOoDvd/f38MGfWdNApA6WKdRzW9FkUHPueUqZdwo4uBYtaptYLNTB9ygTpALMeC+VGoswON27cQpfeY/DnmXOyPoMW4CnMgS5hdZViyd5JIj87PhW7970rTLRoTWtO7HTFQh4sMXkMoQ4/AAAVm0lEQVQ5Oblo0X4ALlz411WaTZHv1K1g0dfPnD4ZL9R8XhEQahuhA7A0NaRy7Kdf0CNiguxRVsUK5aVzhnoVbznsLUee6A/fnBFjrxwzNr1DIQ/LlyxSZHro5+sGby/g4qUraNl+kOxTDzY57oQP6VqwpAPBC+fBjeYKOiw0vaFFeCrjp8yTbgOWU0ioZkRFguKzXKXknR6mZWzCuo27ZYt+QdxoLWverBmFHslSEj+aFBz/6RR69J8gO4NHQf4667/rWrCoUSL69kTHdq112T4U5kAdmP74TvxyGr0HRsq+TcXPzw8rliVL2SpcqVimh3fvZmPewnTs2vuOMBGgdEQU8vBY5YqyEFvnw0pftRVpKzbKsuPKL+lesOj+OToQTAeD9ViszxlmrN6K1Az5nVjPQbWFaTvrG2koNc3WneLOHtJCfMqieBQLD7PbZS9PINDPTcpl37R1P2layMU+AroXLPrcxg3rYeK4UfZ9uUaets71ffHiZTRr2x80WpBTvL1NSE1JlPXHJKc+rbyTN+Rh+aotWLl2mzD3aHqYGB+HEsXD7arDEn91+P3PMH7qPLve5YfNBJxCsOhDUhbGo3Il5baf1ewgNDgM9HeTEjIfev9TTIqSn520bp0XMS1ynJrua6Iu69Q0FBFPWR42bzsgbHro6+uLuJhpePzxyjZ9v3Uoy5hJcfjg4y9teo8fepCA0wgWLTjHTJ+s+fxYj+qAluwEtFVPR3b++8PPsvoqhTlQwGOZMqVkva/3l6ynh3MWLMOO3W+DdhJFFMqjNX/OTJQvV3DmUn9fN5i8gB9+PIHegyKFCamI79SSTacRLII6YexINGmkz4tHrcMcSKz6DJoEufGQ/v5+WLsi1eF38Tmqo1tCHmitKDVjA1at2yHMlcAAf2lNK78gZkuW0avXrqNTz9E4f+EfYf44u2GnEiwaVSxbvBB0I44ei/XtwDPnLpECIuWWwQP6os3rr8l9XdfvSWtaJnPICB17Sl+1BavX7xQ2qjGZTOjSsR1eb9nsgcPo1AuNRgOuX/0H7xz+GBu27MO58yxWhelcTiVYBKJ7t07o0aWjLkXLOszh19N/omvfsbLPGdLUcPGieIfew1eYjqnEu5bpIV1YOj9pJbbtfFOYaJG/NEWkBJPFw8Nx7fp1fH30W5y/cAF09pGLMgScTrDo144SsdF1Tnos1ouzG7fsQ0LyStmf8czTT0o3Hut1xCn7w61etA7OXbRkjRRcykW/BJxOsKgpGjWsh0k6DXMg/++fM7yJdt1G4MLf8s6bkVC93rI5aHroqqJlPT3MysrCyrU7kL56i7CIeP1KgT48d0rBIvR0YLVa1Wf10Qp5vKQwBxItKu++9wkipy+QPZWhgNpxo4ejYf26umShlNP3I+LvIil1HTZvfQPZOTlKmWc7KhFwWsGi6dC82TN0G+ZgvT0/Ylwsjnz2daG6RNSUCajzYq1C2ZD7Mp2d83DLxrHjP2HFmq3IzTWgXt0XpYwbQYGBqo3+rO+IpOSJUmoaQSEPclnxe/kTcFrBoinQsMH90bJFU132gbxhDr0HTirUd3h5eaFblw7SbpZahTYRAv0M+OWX05gWuwinfv3jgZGir68PWjZvhr691bm2jHbtfLwNoN3Yu9nZWLFmG5av3KwWDq5HAQJOK1jEhhbeV6Qlw2g0KoBKfRN0+YJ01T0g5X3asedgoZygrA71676Egf17IzgoqFC28nuZRlTk+98XziFjzRYcPHREukTiYYV+WGi0NW7UMFXaSRItHwN8jAZp984c8rBDOt/HRfsEnFqwCH/njm3Rp2c31aYdSja5dTrln078iu79xstey7L2i6Zhw4b0R62az4NGXkoVGlGZvAy4dPECdr/xjnSez9bgV9ooGTl0oGrBrpbpIZ0sSExZhc3b9vOallIdQaAdpxcs+gVfmpxg0/EJgZxlm6bT/XTKn663b9S8l+y4rLwOEBdKlzJp/ChUr/acbP8sL9J1XFm3r2Fu4nLpPKScA9z16ryIqSqegySfaXpIokX5tDLWbC00BzYgloDTCxbhU/sPQckmsxzrIJuDR0Xji6++U9K8ZIvu4Xv6qSqoX68Onn36SZtGXTT6u3r1Mk6ePIGvj36H//5wHDQKlHuhhuWjaGOARMuNhmuCC30DCRb9H00P16zfiWUrNysyihXsusuadwnBotadMW0SateqqbuGtr4xOmnpWqzdsEvoN9B6X8Xy5aQI+aJFi8Df3xeenl6gGKbLV67g/Pm/cf78eZw8dQpXrlwT4kuDei9h1PDBqt25eP/sYTaSU9dJV69lZ8tL8SMECBv9HwGXEayKFcph8aL5ulvLokXiIsHm0QaFBCxNl5/gT0/9nkbFE8ePgqeHOokZLdNDYpSSlimNtuTeZKQnznrz1WUEi9ZsBkX0QZvW+joQTNOWIkFmwYqbn4btu9/WWx+T7e+LtWoielrhwjlsrTxvyEPmxt2ScHHRFgGXESzCTjtiK5engK5510uxnC2kX/v23Ufg9G9/6cV1Rfwk0Zo4bqRqu4eWkdbdu3eRvnqrlJqGp4eKNKUiRlxKsIhY29YtpZGWlN5TB8XyB/Tvxcto0W6AS578p9ixMSOHglJAq1GsD0wnLVkjXSHGcVpqkC+4DpcTLNp9SpgbiyerPF4wHQc/QdPBYLoWyg349POjGD5ups1xTQ52XfHqacOENk7UKpRPi6Li6ejOqsztWLp8g1pVcz35EHA5wSIWlLNodsw0zXcMWm8O9neTQgV6DZyEn0/8qnmfRTpIZw8pX72np6fIaiTb1iEPND1ct2kPUtM38EhLOPn8K3BJwaLeSB2/7ku1HYz/0dVLoyt/A9zdDdI6yuJlvABMtF6s/QLGjR4GP19fVdrO994xHkoCuGT5BmRu2i0rKFYVZ12gEtcULAChoSHISE1WbV3E3r5kWbs6cfI3dO83Tjqsy8VMoNYLzyN66iRVgkupPuuQh+WrNmP5Ss6n5ai+6LKCRWEOfXt3R6f2bRzF/pH1mowGUHoZuqewS5+x+Pufi5rz0dEOvVCjOmZGT1HFDdqfofzwJFy0Y0i52SmIl+O0VMH/QCUuK1hEgbIXpC1OROlSJdUn/4gaaYE9KMAN165dx6jxs/Dt98c145vWHCHRmjR+NChNjRrFMtIi0aIsD6syd4LWt7ioR8ClBYswv/pyI4wdNUw94vnUZLmEIhe5SFhkTjDHJX8CtKZF6bBNJnVSCFlPD5emb8DqTE5No2YfdXnBolFW3MwoPPfs02pyf2hdlswMdF6QoqxpoZdLwQRq1qiG2OipBT+o0BOW69iofWh6uHDxaoUss5mCCLi8YBGgxypXQlLiXIfGklp+uY8d/wWDRk7Htes3Cmo7/ncrAjWqV8W0yRNUH2nRZsj6TXtAoy05KXW4Ee0jwIIlxdwYMHXSONSt45gwBy9Pg5RK+K8z59Ghx8hHZue0r2ld7+nGjeph9PAhNqXHUYKOdT6t1PSNWLNhF69pKQE2HxssWPfgkGhtWJOO4GBxqYMf1g60yE7R7EAuKG/79z+eENzkzm2+f99e6NDuddU+0vq2blrP4gPTYtGzYFnx7dqpHXr3VOdCBKqWFtnpOi8Srdnxadixx3UyMYjq1j4+3khJnIeSJUuIquIBu1LIg9EACjCl3cPN2w9Ia1q8/igGPwuWFVcPD3ckJ8ajQvmyYmjnsUqL7J4eudi17x3EzV/GnVwh6pThYfrUiarmPrNMD0mozFketrvkQXWFmvCRZliw8qChKOqYqMmiucPPxw3eRuD4z6fQe2CklNGTizIE/Px8sX51OoxG5S7YsMUzy4FpejZjzTYsW7GJf4RsAWfHMyxYeWBRmMOsmGmo9twzdmC071HLIvuZs+fRI2IiLl2+Yp8BfrpAAhRbRzF2ahe6PoymhzTS2rrzLcQvTFfbBaeujwXrIc0bHhaG1JQFoPUQpYuHu3mRnSKk6UbnzwVcKqG0z3q0V7lSBaQsjHeI6/cj4nOQudmc5YEuueBSeAIsWI9gSAnjmr7SuPCErSxY8lsZkIvYeUuw541DitpnYw8S2LN9g2ohDnnZUy4tmiJSocPSK9Zu45AHBTooC9YjIHq4u2NV+hLp5hiliiWS/Z3DRzA5OpHXN5QC+wg7G9dmqB6mYu0KHZim7KV0SHrT1v1ISF4h+Iud3zwLVj5t3LJFUwwfMkCRXmDJq/T1Nz9I9wtyVLQiWPM1snZlGsIU/MGR47FFtCjF8vZdb2FBykpuezkg773DgpUPPA8PDyQtmAu6IqwwxehpQICfAefO/40Bw6Pw51/nCmOO37WRwNoVqQgLK2rj0+Ies46IX7luOzJWbcUd3hWWBZwFqwBslSpWQHLiXNnJ4jzcDQgOME8L+g+biqPfHpPVUPyS/QS0IljkuXVE/NqNu5C8dB3n07K/ScGCVQA0CnOIiYpEjeer2Y2XFtkpkt3NkIPo2Sk48PYH3Entpij/BS0JFn0FRcTTLdMU8rBzz0HMTVwuXXLBxXYCLFg2sPLz88OKtGQEBgbY8LT5EdofomkgxVztPXAYM+cs5s5pMz1lHlydsRTFwsOUMaaQFevUNJmb90ohD3TJCBfbCLBg2cYJEX16oKMd6ZQtAYTf/PcYIoZM5ZGVjZyVfGzl8sUoUbyYkiYVsWU9PaQjPGkrNnPIg41kWbBsBEW3Ri9fusimX2yjlwEBvgYpTQzd1nzm7AUba+HHlCSQkZaMUiodgrbXb8v0kNY2d+w5iLj5afaacMnnWbDsaPZ6dV7E1Mhx+b5BkeyB/m7IunMHQ8fE4Oi3P9pRAz+qJAE6rVC+nDoH2eX4bT093LH7oBSnxRHx+ZNkwbKjp9ECfPTUiahZo/pDMwGY7xJ0w63bN7E4LRNbdhywwzo/qjSBpAVz8PhjlZU2q6g9i2jRSGvN+l1YtnITr2nlQ5gFy87uR1fdUzBpi2avPPCmlIgv0A3ffncMUbFJHGtlJ1cRj8+ZFS30ELtSPlumh2Rv8479iE/MUMq009lhwZLZpOHhYdJ6lqeHBy5dvox//70opYihXOx8X51MqAq/NmnCaDSqX1dhq2LMWYc80BnTuIRlUkJALg8SYMHiHuG0BOiS3H59eujm+/63ppWbi41b9mHJ8vWc3z9P67Fg6aY7s6P2EqBTCosXOSbFjL2+Wp63hMPQf9MVYouWrOGRlhVMFiy5PYvf0zwBulgkfWkSSpVSJ7+7UkBMXgb4+5qPc+3dfwgxc5YoZVr3dliwdN+E/AH5EejcsS369uquO0j3M5fmYufeg1iQtBK379zR3Xco7TALltJE2Z6mCJQuVRLLliyUfXjdkR9jHRGfuWmPtKbl6sd4WLAc2SO5blUIjBoxGM1ffVmVupSuxDI9JLt0u1Ls3KVKV6EreyxYumoudlYOAX9/P6SnJiEoMFDO6w5/537IQy72v/UeZsWnumxEPAuWw7sjO6AGgdatWmBQ/z66nBoSH+uI+E3b3sDitPW4dfu2Gug0VQcLlqaag50RSSBywhg0rF9HZBVCbVtHxG/b9RbmJaa73L0ALFhCuxgb1xIBmhrGx8Vo+kB0QbwsmUAo5GH/2x9gxuwUlxItFqyCegj/u1MRKBIaivg5MZrMk2UraOvp4frNe5C0dJ3LiBYLlq29hJ9zGgJGoxGJ8bNQsUJ53X4T5Vuj0RaVHhET8OPxk7r9FnscZ8GyhxY/6zQETCYTRo8YjIY6ORydFzyl3g70MwtWYsoqrN+812naJr8PYcFyiWbmj3wYAU9PTzRqWA/9+/REQIC/riC5uxkQEmgWLBIrEi1XKCxYrtDK/I35EggJCcaAvr1Qu1YNeHt764KWtWDxCEsXTcZOMgFlCZhMRoweMQQN6tV5aEZZZWsrnDXLbiFZ6dl/In44dqJwBnXyNo+wdNJQ7KZ6BIKDg1CpQgXUeekF1Hi+OoqEhqhXuY01Bfkb4OlhwJr1O7F42XreJbSRGz/GBJyeQEhwMEqWLI7wsKIIDQ1BYEAAfH19pOmjt8kE2nU0mowwGY3w8/OVjgBR/n9Rxd/HAJPRgN373pWO6dDFrK5SeITlKi3N36kaAU9PDzxfvSpaNHsVVR5/TBIxys2lRKGboynifQ/lyYpbrIRJXdlgwdJVc7GzeiJAIkW3hteoXhWDB/S16+bwh32nRaykK8GSVrhkfiwWLD39BbCvuiVA08SO7VuDDmF7eHjY/R0Wsdr/9vuYNS/VZXO9s2DZ3XX4BSYgn0CTRvUxZFAE/Hx9bTJCE0kfHwMoA+mbBz/E1JiFNr3nrA+xYDlry/J3aZbAU1WeQMK8WJvWtXy9DVJqGRKr6bFJyHahBfaHNSALlma7NTvmzASeqvI44mZFw+jl9cjPpGmg0RPYuvMAUtIycfPmLWdGYtO3sWDZhIkfYgLKEyhRojgi+nTHc88+878pIoUoXLx4Ee5uWbhw4Rx27X0H7773ifKV69QiC5ZOG47ddh4CFLNVuVIF+Pv54+Qvp/DvxYvO83EKfwkLlsJA2RwTYALiCLBgiWPLlpkAE1CYAAuWwkDZHBNgAuIIsGCJY8uWmQATUJgAC5bCQNkcE2AC4giwYIljy5aZABNQmAALlsJA2RwTYALiCLBgiWPLlpkAE1CYAAuWwkDZHBNgAuIIsGCJY8uWmQATUJgAC5bCQNkcE2AC4giwYIljy5aZABNQmAALlsJA2RwTYALiCLBgiWPLlpkAE1CYAAuWwkDZHBNgAuIIsGCJY8uWmQATUJgAC5bCQNkcE2AC4giwYIljy5aZABNQmAALlsJA2RwTYALiCLBgiWPLlpkAE1CYAAuWwkDZHBNgAuIIsGCJY8uWmQATUJgAC5bCQNkcE2AC4giwYIljy5aZABNQmAALlsJA2RwTYALiCLBgiWPLlpkAE1CYAAuWwkDZHBNgAuIIsGCJY8uWmQATUJgAC5bCQNkcE2AC4giwYIljy5aZABNQmAALlsJA2RwTYALiCLBgiWPLlpkAE1CYAAuWwkDZHBNgAuIIsGCJY8uWmQATUJgAC5bCQNkcE2AC4giwYIljy5aZABNQmAALlsJA2RwTYALiCLBgiWPLlpkAE1CYAAuWwkDZHBNgAuIIsGCJY8uWmQATUJgAC5bCQNkcE2AC4giwYIljy5aZABNQmAALlsJA2RwTYALiCLBgiWPLlpkAE1CYAAuWwkDZHBNgAuIIsGCJY8uWmQATUJgAC5bCQNkcE2AC4giwYIljy5aZABNQmAALlsJA2RwTYALiCLBgiWPLlpkAE1CYAAuWwkDZHBNgAuIIsGCJY8uWmQATUJgAC5bCQNkcE2AC4giwYIljy5aZABNQmAALlsJA2RwTYALiCLBgiWPLlpkAE1CYwP8B9bTbBwoMH6wAAAAASUVORK5CYII=" alt="unzoom" />
+          </a><span><strong>UnZoom:</strong> provides video conferencing with screen sharing </span> </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6">
+        <div class="capacities">
+          <div> <a href="https://github.com/holochain-apps/talking-stickies"><img class="capacity-logo" src="/images/talking-stickies_icon.png" /> </a><span><strong>TalkingStickies: </strong> provides real-time stickies-boards for ideation, meeting agendas, retros, etc...</span> </div>
+          <div> <a href="https://github.com/lightningrodlabs/converge"><img class="capacity-logo" src="https://lightningrodlabs.org/projects/converge.png" /> </a><span><strong>Converge: </strong> allows stakeholders to shift focus from outcomes to refining a set of criteria that has maximal support. Using this list, they can evaluate and refine proposals to meet those broadly supported criteria.</span></div>
+          <div> <a href="https://github.com/lightningrodlabs/whos-in"><img class="capacity-logo" src="https://lightningrodlabs.org/projects/whosin.png" /> </a><span> <strong>Who's In?: </strong> enables users to propose collective actions or events. With it, anyone can suggest a joint action or event, which other people can agree to on the contingency that every necessary role is filled. This allows group action to grow effortlessly from idea to reality without anyone having to worry about its viability</span> </div>
+          <div> <a href="https://github.com/glassbeadsoftware/"><img class="capacity-logo" src="https://lightningrodlabs.org/projects/snapmail_logo.jpg" /> 
+            </a><span> <strong>SnapMail: </strong> provides email-like in-group messaging with attachments, replies, etc.</span> </div>
+          <div> <a href="https://github.com/lightningrodlabs/where"><img class="capacity-logo" src="https://lightningrodlabs.org/projects/where_logo.png" /> 
+            </a><span> <strong>Where: </strong> provides a generalized grammar for creating shared maps for groups to see the emergent "whereness" of each other across those them, as well as the grammatics to self-evolved these spaces and how to represent "location" in them.
+            </span> </div>
+          <div> <a href="https://github.com/holochain-apps/gamez"><img class="capacity-logo" src="/images/gamez_icon.svg" />
+            </a><span> <strong>Gamez: </strong> provides a place to design and play arbitrary board games.</span> </div>
+          <div> <a href="https://github.com/lightningrodlabs/tables"><img class="capacity-logo" src="/images/tables_icon.svg" /> 
+            </a><span> <strong>WaterTable: </strong> provides ability to create database-like tables for collecting and viewing data.  Think of this as an "AirTable" clone!</span> </div>
+          <div> <a href="https://github.com/lightningrodlabs/calcy"><img class="capacity-logo" src="/images/xylem_icon.svg" /> 
+            </a><span> <strong>Xylem: </strong> provides real-time colloaborative spread-sheets based on the <a class="linkable" href="https://github.com/dream-num/univer">Univer</a> open-source library.</span> </div>
+        </div>
+      </div>
+      <p class="aligncenter"><br /><a href="https://github.com/lightningrodlabs/we/releases/tag/we-alpha-v0.10.7" class="btn btn-default btn-xl sr-button">Download Moss</a><a style="margin-left:10px;" href="#developers" class="btn btn-default btn-xl sr-button page-scroll">Develop The Weave</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="bg-dark" id="developers">
+  <div class="container">
+    <div class="row text-center">
+      <h2 class="section-heading">Developing The Weave</h2>
+      <hr class="light" />
+    </div>
+    <div class="row text-left">
+      <div class="col-lg-6 col-md-6">
+        <h3 class="aligncenter">Our Methodology</h3>
+        <p>Many deep infrastructure projects are built by creating a very detailed specification, and then building to it.  With The Weave, this is not our way.</p>
+        <p>Instead we have built Moss, as a reference frame and discovery tool to understand what needs to exist inside The Weave, as we begin using it organically ourselves to grow our own social fabric.  The concepts described in this website emerged over time, beginning from what was at first just understood as a <a href="https://eric.harris-braun.com/blog/2022/07/26/id-390">distributed groupware</a> platform, and are now solidifying into a more formal protocol with the <strong>Weave Interaction Pattern</strong> described above.</p>
+        <p>We expect this to become more formalized over time, but for now we want it to emerge from the 
+        experience and needs of actual groups using this framework.  Thus we are not prematurely creating a "hard-spec" of for the WIP</p>
+        <p>We expect very soon to open a Group that uses a Tool in development called <a href="https://github.com/holochain/how">How</a> to "dog-food" the landing of the WIP spec.</p>
+      </div>
+      <div class="col-lg-6 col-md-6">
+        <h3 class="aligncenter">Building Tools</h3>
+        <p>Coding a Weave Tool is a matter of updating a standard Holochain hApp in a few ways.</p>
+        <p>It's trivial (a 5 minute task) to simply update your hApp to run in the context of a Weave Frame,
+           this just involves getting the <code>AppAgentClient</code> from the Frame instead of building it directly
+           using the <code>holochain-client</code> library. </p>
+        <p>It takes a little more work to add support for other aspects of the Weave Integration Protocol, but each of these affordances (searching, linking, embeding, creating) can be added one piece at a time and are not a heavy lift. Detailed instructions for how to add  can be found in the <a class="linkable" href="https://www.npmjs.com/package/@lightningrodlabs/we-applet">client npm package docs</a></p>
+        <p>But the easiest approach may simply be to clone any one of the projects above (clicking on the icon takes you to each Tools's github repo), and modify it to your needs.  That's what we often todo!</p>
+      </div>
+    </div>
+  </div>
+</section>

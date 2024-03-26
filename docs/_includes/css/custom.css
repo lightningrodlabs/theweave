@@ -54,6 +54,16 @@ header .header-content .header-content-inner p.header-text {
   margin:15px 0;
   opacity: .5;
 }
+/* About section */
+#about .screenshot {
+  border-radius: 8px;
+  background-image: url(/images/screenshot1.png);
+  background-position: center;
+  width: 100%;
+  height: 120px;
+  margin:15px 0;
+  opacity: .8;
+}
 #about p, #about li{
       font-size: 130%;
       line-height: 1.4;
@@ -71,6 +81,34 @@ header .header-content .header-content-inner p.header-text {
     margin-left: 40px;
     font-size: 140%;
     line-height: normal;
+}
+
+/*Moss sections*/
+#moss .screenshot-join {
+  border-radius: 8px;
+  background-image: url(/images/join_group.png);
+  background-size: cover;
+  width: 80%;
+  height: 260px;
+  opacity: .9;
+}
+
+#moss .screenshot-apps {
+  border-radius: 8px;
+  background-image: url(/images/apps.png);
+  background-size: cover;
+  width: 80%;
+  height: 260px;
+  opacity: .9;
+}
+
+#moss .screenshot-image {
+  border-radius: 8px;
+  background-image: url(/images/moss_screenshot.png);
+  background-size: cover;
+  width: 80%;
+  height: 260px;
+  opacity: .9;
 }
 
 #about li:before {
