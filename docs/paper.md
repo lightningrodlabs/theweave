@@ -45,8 +45,8 @@ Abstractly, Capacities provide access to, creation and modification of coherent 
 ### Meaning
 
 As a coherent data unit, an Assets must be interpreted meaningfully.  Assets types are thus defined by:
-* Asset Identifier definition:  A schema that describes how and asset can be identified, e.g. index, hash, uuid, etc.
-* Asset Semantic Tree definition: A schema that describes semantically the content of the Asset which can be used to retrieve parts of the Asset, as well as to subscribe to Asset changes.
+* <strong>Asset Identifier</strong> definition:  A schema that describes how and asset can be identified, e.g. index, hash, uuid, etc.
+* <strong>Asset Semantic Tree</strong> definition: A schema that describes semantically the content of the Asset which can be used to retrieve parts of the Asset, as well as to subscribe to Asset changes.
 
 ### Relations
 
