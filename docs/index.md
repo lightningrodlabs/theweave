@@ -85,9 +85,9 @@ description: ""
       <h3 class="aligncenter">Tools</h3>
       <div class="col-lg-6 col-md-6">
         <p> A core feature of The Weave is the the ability for groups to pick the fit-for-purpose tooling that's appropriate for each group, and, as desired add specific new tools as the group's purpose and needs evolve.</p>
-        <p>Assets generated in one Tool can be linked to and embedded in Assets created by other tools.  This createas an
+        <p>Assets generated in one Tool can be linked to and embedded in Assets created by other tools.  This creates an
         "asset-centric" computing environment rather than the usual application centric model.</p>
-        <p>Here are a number of Tool capacities that have allready been developed that you can use to get a feeling for the power of this approach:</p>
+        <p>Here are a number of Tool capacities that have already been developed that you can use to get a feeling for the power of this approach:</p>
         <div class="capacities">
           <div> <a href="https://github.com/lightningrodlabs/vines"><img class="capacity-logo" src="https://lightningrodlabs.org/projects/vines.svg"> </a><span><strong>Vines: </strong> Provides the usual chat functionality: topics, channels, attachments, mentions, etc.</span></div>
           <div> <a href="https://github.com/lightningrodlabs/slate"><img class="capacity-logo" src="https://lightningrodlabs.org/projects/slate_icon.svg"> </a><span> <strong>Slate: </strong> Provides real-time collaborative drawing. Fully featured diagrams and drawing tools based on the <a class="linkable" href="https://excalidraw.com/">Excalidraw</a> open-source library.</span> </div>
@@ -114,7 +114,7 @@ description: ""
           <div> <a href="https://github.com/lightningrodlabs/tables"><img class="capacity-logo" src="/images/tables_icon.svg">
             </a><span> <strong>WaterTable: </strong> provides ability to create database-like tables for collecting and viewing data.  Think of this as an "AirTable" clone!</span> </div>
           <div> <a href="https://github.com/lightningrodlabs/calcy"><img class="capacity-logo" src="/images/xylem_icon.svg">
-            </a><span> <strong>Xylem: </strong> provides real-time colloaborative spread-sheets based on the <a class="linkable" href="https://github.com/dream-num/univer">Univer</a> open-source library.</span> </div>
+            </a><span> <strong>Xylem: </strong> provides real-time collaborative spread-sheets based on the <a class="linkable" href="https://github.com/dream-num/univer">Univer</a> open-source library.</span> </div>
         </div>
       </div>
       <p class="aligncenter"><br /><a href="https://github.com/lightningrodlabs/we/releases/tag/we-alpha-v0.11.6" class="btn btn-default btn-xl sr-button">Download Moss</a><a style="margin-left:10px;" href="#developers" class="btn btn-default btn-xl sr-button page-scroll">Develop The Weave</a></p>
@@ -143,7 +143,7 @@ description: ""
         <p>It's trivial (a 5 minute task) to simply update your hApp to run in the context of a Weave Frame,
            this just involves getting the <code>AppAgentClient</code> from the Frame instead of building it directly
            using the <code>holochain-client</code> library. </p>
-        <p>It takes a little more work to add support for other aspects of the Weave Integration Protocol, but each of these affordances (searching, linking, embeding, creating) can be added one piece at a time and are not a heavy lift. Detailed instructions for how to add  can be found in the <a class="linkable" href="https://www.npmjs.com/package/@lightningrodlabs/we-applet">client npm package docs</a></p>
+        <p>It takes a little more work to add support for other aspects of the Weave Integration Protocol, but each of these affordances (searching, linking, embedding, creating) can be added one piece at a time and are not a heavy lift. Detailed instructions for how to add  can be found in the <a class="linkable" href="https://www.npmjs.com/package/@lightningrodlabs/we-applet">client npm package docs</a></p>
         <p>But the easiest approach may simply be to clone any one of the projects above (clicking on the icon takes you to each Tools's github repo), and modify it to your needs.  That's what we often todo!</p>
       </div>
     </div>
