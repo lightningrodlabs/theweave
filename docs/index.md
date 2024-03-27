@@ -77,7 +77,7 @@ description: ""
         <p><strong>Frames</strong> are the programs that let you create, access and weave together Holochain hApps into the social fabric of The Weave</p>
       </div>
       <div class="col-lg-4 col-md-4">
-        <p><img style="width:100px;float:left;margin-right:10px;" src="/images/moss_icon.png"/> <a class="linkable" href="https://github.com/lightningrodlabs/we/releases/tag/we-alpha-v0.10.7" >Download and try Moss</a>, our reference implementation of a Frame for The Weave</p>
+        <p><img style="width:100px;float:left;margin-right:10px;" src="/images/moss_icon.png"/> <a class="linkable" href="https://github.com/lightningrodlabs/we/releases/tag/we-alpha-v0.11.6" >Download and try Moss</a>, our reference implementation of a Frame for The Weave</p>
       </div>
       <div class="col-lg-12 col-md-12">
         <p class="screenshot-image aligncenter"></p>
@@ -117,7 +117,7 @@ description: ""
             </a><span> <strong>Xylem: </strong> provides real-time colloaborative spread-sheets based on the <a class="linkable" href="https://github.com/dream-num/univer">Univer</a> open-source library.</span> </div>
         </div>
       </div>
-      <p class="aligncenter"><br /><a href="https://github.com/lightningrodlabs/we/releases/tag/we-alpha-v0.10.7" class="btn btn-default btn-xl sr-button">Download Moss</a><a style="margin-left:10px;" href="#developers" class="btn btn-default btn-xl sr-button page-scroll">Develop The Weave</a></p>
+      <p class="aligncenter"><br /><a href="https://github.com/lightningrodlabs/we/releases/tag/we-alpha-v0.11.6" class="btn btn-default btn-xl sr-button">Download Moss</a><a style="margin-left:10px;" href="#developers" class="btn btn-default btn-xl sr-button page-scroll">Develop The Weave</a></p>
     </div>
   </div>
 </section>
