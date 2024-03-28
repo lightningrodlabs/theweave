@@ -12,7 +12,7 @@ description: ""
       <img src="/images/the-weave-logo-vertical.png" />
       <hr style="margin-bottom: 1em;"/>
       <p class="header2-text">Open standards and implementations for growing thrivable social fabric.</p>
-      <p><a href="#about" class="btn btn-primary btn-xl page-scroll">Explore</a></p>
+      <p><a href="#about" class="btn btn-default btn-xl page-scroll">Explore</a></p>
     </div>
   </div>
 </header>
