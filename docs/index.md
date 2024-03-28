@@ -9,9 +9,9 @@ description: ""
 <header>
   <div class="header-content">
     <div class="header-content-inner">
-      <h1 class="home-heading">The Weave</h1>
+      <img src="/images/the-weave-logo-vertical.png" />
       <hr style="margin-bottom: 1em;"/>
-      <p class="header-text">Open standards and implementations for growing thrivable social fabric.</p>
+      <p class="header2-text">Open standards and implementations for growing thrivable social fabric.</p>
       <p><a href="#about" class="btn btn-primary btn-xl page-scroll">Explore</a></p>
     </div>
   </div>

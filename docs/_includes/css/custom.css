@@ -20,6 +20,9 @@ section.std-page {
   background-position: center;
 }
 
+body {
+  font-family: sans-serif;
+}
 /* Make redirects pretty */
 body#redirect {
   text-align: center;
@@ -41,6 +44,15 @@ header .header-content .header-content-inner p.header-text {
   background: rgba(220, 220, 220, 0.4);
   color: lightgoldenrodyellow;
   padding: .5em 5px;
+  border-radius: 22px;
+}
+
+header .header-content .header-content-inner p.header2-text {
+  /* text-shadow: 2px 2px #CCC; */
+  font-size: 200%;
+  line-height: 1.5;
+  font-weight: bold;
+  width: 600px;
   border-radius: 22px;
 }
 
