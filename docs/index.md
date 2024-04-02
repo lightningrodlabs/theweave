@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Home
-image: /images/moss_mushrooms.jpg
 navigation_weight: 1
 permalink: /
 description: ""
