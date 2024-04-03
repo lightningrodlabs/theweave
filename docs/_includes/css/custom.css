@@ -94,6 +94,16 @@ header .header-content .header-content-inner p.header2-text {
     font-size: 140%;
     line-height: normal;
 }
+/*Features sections*/
+
+#features .toolshed-image {
+  border-radius: 8px;
+  background-image: url(/images/postits.jpg);
+  background-size: cover;
+  width: 80%;
+  height: 400px;
+  opacity: .9;
+}
 
 /*Moss sections*/
 #moss .screenshot-join {
