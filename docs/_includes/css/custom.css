@@ -67,6 +67,17 @@ header .header-content .header-content-inner p.header2-text {
   opacity: .5;
 }
 /* About section */
+#about .moss-screenshot-image {
+  background-image: url(/images/moss_screenshot.png);
+  width: 100%;
+  height: 450px;
+  margin:15px 0;
+  background-size: cover;
+
+}
+
+
+/* About section */
 #about .screenshot {
   border-radius: 8px;
   background-image: url(/images/screenshot1.png);
