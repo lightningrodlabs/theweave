@@ -144,6 +144,56 @@ header .header-content .header-content-inner p.header2-text {
   opacity: .9;
 }
 
+#roadmap .germination {
+  border-radius: 8px;
+  background-image: url(/images/germination.jpg);
+  background-size: cover;
+  width: 240px;
+  height: 220px;
+  opacity: .9;
+  margin-top: 30px;
+}
+
+#roadmap .sprout {
+  border-radius: 8px;
+  background-image: url(/images/sprout.jpg);
+  background-size: cover;
+  width: 240px;
+  height: 220px;
+  opacity: .9;
+  margin-top: 30px;
+}
+
+#roadmap .sapling {
+  border-radius: 8px;
+  background-image: url(/images/sapling.jpg);
+  background-size: cover;
+  width: 240px;
+  height: 220px;
+  opacity: .9;
+  margin-top: 30px;
+}
+
+#roadmap .fruit-tree {
+  border-radius: 8px;
+  background-image: url(/images/fruit-tree.jpg);
+  background-size: cover;
+  width: 240px;
+  height: 220px;
+  opacity: .9;
+  margin-top: 30px;
+}
+
+#roadmap .forest {
+  border-radius: 8px;
+  background-image: url(/images/forest.jpg);
+  background-size: cover;
+  width: 240px;
+  height: 220px;
+  opacity: .9;
+  margin-top: 30px;
+}
+
 #about li:before {
   font-family: FontAwesome;
   position: absolute;
