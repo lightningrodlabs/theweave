@@ -462,3 +462,20 @@ ul.alt li:first-child {
   height: 1px;
   overflow: hidden;
 }
+
+.platform {
+  margin: 20px;
+}
+
+.platform img {
+  width: 70px;
+  height: 70px;
+  margin: 10px;
+}
+
+.platforms {
+  display:flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+}
