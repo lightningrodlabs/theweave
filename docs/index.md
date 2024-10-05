@@ -47,23 +47,9 @@ description: ""
     </div>
   </div>
 </section>
-<section class="bg-dark" id="technical">
-  <div class="container">
-    <div class="row text-center">
-      <h2 class="section-heading">Technical Overview: Draft--March 2024</h2>
-      <hr class="light">
-    </div>
-    <div class="row text-left">
-      <div class="col-lg-12 col-md-12">
-      {% capture my_include %}{% include_relative paper.md %}{% endcapture %}
-      {{ my_include | markdownify }}
-      </div>
-      <p class="aligncenter"><br /><a href="#tryit" class="btn btn-default btn-xl page-scroll sr-button">Try It</a><a style="margin-left:10px;" href="#developers" class="btn btn-default btn-xl sr-button page-scroll">Develop The Weave</a></p>
-    </div>
-  </div>
-</section>
 
-<section class="bg-primary" id="tryit">
+
+<section class="bg-dark" id="tryit">
   <div class="container">
     <div class="row text-center">
       <h2 class="section-heading">Moss</h2>
@@ -86,7 +72,7 @@ description: ""
   </div>
 </section>
 
-<section class="bg-dark" id="developers">
+<section class="bg-primary" id="developers">
   <div class="container">
     <div class="row text-center">
       <h2 class="section-heading">Developing The Weave</h2>
