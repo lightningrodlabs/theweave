@@ -13,7 +13,7 @@ description: ""
 
       <p class="header-text" style="font-size: 155%">
         Redirecting to the Moss Application. If you haven't installed Moss yet, you can
-        <a href="/moss/#download">download it here!</a>
+        <a href="#download" class="page-scroll">download it below!</a>
       </p>
       <div>
         <div style="margin-bottom: 20px">
@@ -23,21 +23,27 @@ description: ""
       </div>
     </div>
   </div>
-  <script>
-    const href = window.location.href;
-    const query = href.split("?")[1];
-    const linkField = document.getElementById("wal-link");
-    linkField.href = query;
-    linkField.innerHTML = query;
 
-    console.log("Got href: ", href);
-    console.log("Got query: ", query);
 
-    window.open(query, "_self");
-
-    const retryButton = document.getElementById("retry-button");
-    retryButton.addEventListener("click", () => {
-      window.open(query, "_self");
-    });
-  </script>
 </header>
+<section class="bg-primary" id="download">
+  {% include downloads.html %}
+</section>
+
+<script>
+  const href = window.location.href;
+  const query = href.split("?")[1];
+  const linkField = document.getElementById("wal-link");
+  linkField.href = query;
+  linkField.innerHTML = query;
+
+  console.log("Got href: ", href);
+  console.log("Got query: ", query);
+
+  window.open(query, "_self");
+
+  const retryButton = document.getElementById("retry-button");
+  retryButton.addEventListener("click", () => {
+    window.open(query, "_self");
+  });
+</script>
