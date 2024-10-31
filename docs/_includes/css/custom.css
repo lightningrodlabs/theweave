@@ -43,7 +43,7 @@ header .header-content .header-content-inner p.header-text {
   font-weight: bold;
   background: rgba(220, 220, 220, 0.4);
   color: lightgoldenrodyellow;
-  padding: .5em 5px;
+  padding: .5em 10px;
   border-radius: 22px;
 }
 
@@ -53,6 +53,16 @@ header .header-content .header-content-inner p.header2-text {
   line-height: 1.5;
   font-weight: bold;
   width: 600px;
+  border-radius: 22px;
+}
+
+header .header-content .header-content-inner .warning {
+  font-size: 250%;
+  line-height: 1.5;
+  font-weight: bold;
+  background: rgba(0, 214, 29, 0.848);
+  color: lightgoldenrodyellow;
+  padding: .5em 10px;
   border-radius: 22px;
 }
 
