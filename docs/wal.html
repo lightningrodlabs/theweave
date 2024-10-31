@@ -47,7 +47,7 @@ description: ""
     return check;
   };
 
-  if (!window.mobileAndTabletCheck()) {
+  if (window.mobileAndTabletCheck()) {
     const mobileWarningEl = document.getElementById('mobile-warning');
     mobileWarningEl.style['display'] = 'block';
   }
