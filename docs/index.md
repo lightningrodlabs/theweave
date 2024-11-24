@@ -42,35 +42,32 @@ description: ""
         <p> But none of those open standards enabled creation and management of <i>social context</i> by groups.  So, that critical function has become siloed into the big corporate websites:  Facebook holds group's "Page", GitHub holds your code, GSuite holds your collaboration tools.</p>
         <p ><a class="linkable" href="https://holochain.org"><i>Holochain</i></a> is an open standard that delivers creating small functioning units of <i>social context</i>, in a way that is both scalable, and decentralized.  To that we now add the <strong>Weave Interaction Pattern</strong>, an open standard for creating, searching, linking and organizing these <i>social context</i> units into complex social fabric that yields "The Weave".</p>
       </div>
-      <p class="aligncenter"><br /><a href="#technical" class="btn btn-default btn-xl page-scroll sr-button">Go Deeper</a>
+      <p class="aligncenter"><br /><a href="#deeper" class="btn btn-default btn-xl page-scroll sr-button">Go Deeper</a>
       &nbsp;<a href="#tryit" class="btn btn-default btn-xl page-scroll sr-button">Try It</a></p>
     </div>
   </div>
 </section>
 
-
-<section class="bg-dark" id="tryit">
+<section class="bg-dark" id="deeper">
   <div class="container">
     <div class="row text-center">
-      <h2 class="section-heading">Moss</h2>
-      <hr class="light">
-    </div>
-    <div class="row text-left">
-      <div class="col-lg-8 col-md-8">
-        <p><strong>Browsers</strong>, like Firefox and Chrome are the programs that allow you to, well, browse the documents served up by web servers.
-        </p>
-        <p><strong>Frames</strong> are the programs that let you create, access and weave together Holochain hApps into the social fabric of The Weave</p>
-      </div>
-      <div class="col-lg-4 col-md-4">
-        <p><img style="width:100px;float:left;margin-right:10px;" src="/images/moss_icon.png"/> <a class="linkable" href="/moss" >Download and try Moss</a>, our reference implementation of a Frame for The Weave</p>
-      </div>
-      <div class="col-lg-12 col-md-12">
-        <p class="screenshot-image aligncenter"></p>
-      </div>
-      <p class="aligncenter"><br /><a href="/moss" class="btn btn-default btn-xl sr-button page-scroll">Explore Moss</a><a style="margin-left:10px;" href="#developers" class="btn btn-default btn-xl sr-button page-scroll">Develop The Weave</a></p>
+      <iframe
+        width="900"
+        height="506"
+        src="https://www.youtube.com/embed/kh1UVlIKvNg"
+        title=""
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
     </div>
   </div>
+      <p class="aligncenter"><br /><a href="/moss" class="btn btn-default btn-xl sr-button page-scroll">Explore Moss</a>
+      <a style="margin-left:10px;" href="#developers" class="btn btn-default btn-xl sr-button page-scroll">Develop The Weave</a></p>
+
 </section>
+
+
 
 <section class="bg-primary" id="developers">
   <div class="container">
