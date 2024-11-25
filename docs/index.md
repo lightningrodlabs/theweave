@@ -79,7 +79,7 @@ description: ""
       <div class="col-lg-6 col-md-6">
         <h3 class="aligncenter">Our Methodology</h3>
         <p>Many deep infrastructure projects are built by creating a very detailed specification, and then building to it.  With The Weave, this is not our way.</p>
-        <p>Instead we have built Moss, as a reference frame and discovery tool to understand what needs to exist inside The Weave, as we begin using it organically ourselves to grow our own social fabric.  The concepts described in this website emerged over time, beginning from what was at first just understood as a <a href="https://eric.harris-braun.com/blog/2022/07/26/id-390">distributed groupware</a> platform, and are now solidifying into a more formal protocol with the <strong>Weave Interaction Pattern</strong> described above.</p>
+        <p>Instead we have built Moss, as a reference frame and discovery tool to understand what needs to exist inside The Weave, as we begin using it organically ourselves to grow our own social fabric.  The concepts described in this website emerged over time, beginning from what was at first just understood as a <a class="linkable" href="https://eric.harris-braun.com/blog/2022/07/26/id-390">distributed groupware</a> platform, and are now solidifying into a more formal protocol with the <strong>Weave Interaction Pattern</strong> described above.</p>
         <p>We expect this to become more formalized over time, but for now we want it to emerge from the
         experience and needs of actual groups using this framework.  Thus we are not prematurely creating a "hard-spec" of for the WIP</p>
       </div>
