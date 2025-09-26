@@ -13,6 +13,9 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="https://moss.social"> Moss </a>
+        </li>
 
         {% assign navigation_pages = site.html_pages | where_exp:"item","item.title != 'Home'" | where_exp:"item","item.title != 'Sorry...'" | where_exp:"item","item.title != 'Revelation'" | sort: 'navigation_weight' %}
         {% for p in navigation_pages %}
