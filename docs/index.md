@@ -81,13 +81,13 @@ description: ""
         <p>Many deep infrastructure projects are built by creating a very detailed specification, and then building to it.  With The Weave, this is not our way.</p>
         <p>Instead we have built Moss, as a reference frame and discovery tool to understand what needs to exist inside The Weave, as we begin using it organically ourselves to grow our own social fabric.  The concepts described in this website emerged over time, beginning from what was at first just understood as a <a class="linkable" href="https://eric.harris-braun.com/blog/2022/07/26/id-390">distributed groupware</a> platform, and are now solidifying into a more formal protocol with the <strong>Weave Interaction Pattern</strong> described above.</p>
         <p>We expect this to become more formalized over time, but for now we want it to emerge from the
-        experience and needs of actual groups using this framework.  Thus we are not prematurely creating a "hard-spec" of for the WIP</p>
+        experience and needs of actual groups using this framework.  Thus we are not prematurely creating a "hard-spec" for the WIP.</p>
       </div>
       <div class="col-lg-6 col-md-6">
         <h3 class="aligncenter">Building Tools</h3>
         <p>Coding a Weave Tool is a matter of updating a standard <a class="linkable" href="https://developer.holochain.org/get-started/">Holochain hApp</a> in a few ways.</p>
-        <p>It's trivial (a 5 minute task) to simply update your hApp to run in the context of a Weave Frame, it takes a little more work to add support for other aspects of the Weave Integration Protocol, but each of these affordances (searching, linking, embedding, creating) can be added one piece at a time and are not a heavy lift.</p>
-        <p>An good approach for newcomers may simply be to clone any one of the <a class="linkable" href="/moss#tools">Moss Tools</a> (clicking on the icon takes you to each Tools's github repo), and modify it to your needs.  That's what we often todo!</p>
+        <p>It's trivial (a 5 minute task) to simply update your hApp to run in the context of a Weave Frame. It takes a little more work to add support for other aspects of the Weave Integration Protocol, but each of these affordances (searching, linking, embedding, creating) can be added one piece at a time and are not a heavy lift.</p>
+        <p>A good approach for newcomers may simply be to clone any one of the <a class="linkable" href="/moss#tools">Moss Tools</a> (clicking on the icon takes you to each Tools's github repo), and modify it to your needs.  That's what we often do!</p>
       </div>
             <p class="aligncenter"><br /><a style="margin-left:10px;" href="https://dev.theweave.social" class="btn btn-default btn-xl sr-button page-scroll">Developer Documentation</a></p>
     </div>
